@@ -78,7 +78,7 @@
             <div id="tocBox" class="row">
               
               <nav class="toc" >
-        <ul><li><a href="#callbacks">Callbacks </a></li><li><a href="#m%C3%A1s-m%C3%A9todos-de-arrays">Más métodos de Arrays </a><ul><li><a href="#.foreach">.forEach </a></li><li><a href="#.reduce">.reduce </a></li><li><a href="#.map">.map </a></li></ul></li><li><a href="#recursos-adicionales">Recursos adicionales </a></li><li><a href="#homework">Homework </a></li></ul>
+        <ul><li><a href="#callbacks-1">Callbacks </a></li><li><a href="#m%C3%A1s-m%C3%A9todos-de-arrays">Más métodos de Arrays </a><ul><li><a href="#.foreach">.forEach </a></li><li><a href="#.reduce">.reduce </a></li><li><a href="#.map">.map </a></li></ul></li><li><a href="#recursos-adicionales">Recursos adicionales </a></li><li><a href="#homework">Homework </a></li></ul>
       </nav>
             </div>
           </div>
@@ -102,8 +102,8 @@
     </td>
   </tr>
 </table> -->
-<h1 id="javascript-vi" tabindex="-1">Javascript VI <a class="anchor-link" href="#javascript-vi"></a></h1>
-<p>Callbacks</p>
+<h1 id="javascript-vi" tabindex="-1">JavaScript VI <a class="anchor-link" href="#javascript-vi"></a></h1>
+<h4 id="callbacks" tabindex="-1">Callbacks <a class="anchor-link" href="#callbacks"></a></h4>
 <p>En esta lección cubriremos:</p>
 <ul>
 <li>Callbacks</li>
@@ -111,7 +111,7 @@
 <li>Introducción a la programación funcional</li>
 </ul>
 <iframe src="https://player.vimeo.com/video/425254623" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<h2 id="callbacks" tabindex="-1">Callbacks <a class="anchor-link" href="#callbacks"></a></h2>
+<h2 id="callbacks-1" tabindex="-1">Callbacks <a class="anchor-link" href="#callbacks-1"></a></h2>
 <p>Un concepto muy importante en Javascript es la capacidad de pasar una función como argumento a otra función. Estas funciones se denominan <code>callbacks</code>. Estas funciones pueden llamarse en cualquier momento y pasar argumentos dentro de la función. Pronto descubriremos por qué las devoluciones de llamada son tan importantes para Javascript. La convención es usar <code>cb</code> como argumento para la variable que se usará de callback.</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">function</span> <span class="token function">decirHolaAlUsuario</span><span class="token punctuation">(</span><span class="token parameter">usuario</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> <span class="token string">'Hola '</span> <span class="token operator">+</span> usuario <span class="token operator">+</span> <span class="token string">'!'</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">function</span> <span class="token function">decirAdiosAlUsuario</span><span class="token punctuation">(</span><span class="token parameter">usuario</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> <span class="token string">'Adiós '</span> <span class="token operator">+</span> usuario <span class="token operator">+</span> <span class="token string">'!'</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">function</span> <span class="token function">crearSaludo</span><span class="token punctuation">(</span><span class="token parameter">usuario<span class="token punctuation">,</span> cb</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">return</span> <span class="token function">cb</span><span class="token punctuation">(</span>usuario<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token function">crearSaludo</span><span class="token punctuation">(</span><span class="token string">'Dan'</span><span class="token punctuation">,</span> decirHolaAlUsuario<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'Hello Dan!'</span><br><span class="token function">crearSaludo</span><span class="token punctuation">(</span><span class="token string">'Dan'</span><span class="token punctuation">,</span> decirAdiosAlUsuario<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'Goodbye Dan!'</span></code></pre>
 <h2 id="m%C3%A1s-m%C3%A9todos-de-arrays" tabindex="-1">Más métodos de Arrays <a class="anchor-link" href="#m%C3%A1s-m%C3%A9todos-de-arrays"></a></h2>
