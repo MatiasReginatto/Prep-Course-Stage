@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/_src/styles/lesson.css">
     
-    <title> | Herny Prep Course </title>
+    <title>Git y GitHub | Herny Prep Course </title>
   </head>
 
   <body>
@@ -16,7 +16,7 @@
       <navbar class="navbar fixed-top navbar-light bg-black">
         <div class="container-fluid">
           <img src="/_src/assets/logo-white.png" alt='logo Henry' height=27px class="d-inline-block align-text-top">
-          <span> | Prep Course</span>
+          <span>Git y GitHub | Prep Course</span>
         </div>
       </navbar>
 
@@ -32,19 +32,13 @@
         <a href="/00-PrimerosPasos/README/" class="nav-link" role="menuitem">Primeros Pasos</a>
       </li>
 <li class="nav-item">
-        <a href="/00-PrimerosPasos/editorTexto/" class="nav-link" role="menuitem">Editor de Texto</a>
-      </li>
-<li class="nav-item">
-        <a href="/00-PrimerosPasos/git/" class="nav-link" role="menuitem">Git1</a>
+        <a href="/01-Git/README/" class="nav-link" role="menuitem">Git</a>
       </li>
 <li class="nav-item">
         <a href="/00-PrimerosPasos/github/" class="nav-link" role="menuitem">GitHub</a>
       </li>
 <li class="nav-item">
-        <a href="/00-PrimerosPasos/node/" class="nav-link" role="menuitem">Node.JS</a>
-      </li>
-<li class="nav-item">
-        <a href="/01-Git/README/" class="nav-link" role="menuitem">Git</a>
+        <span class="nav-link active" tabindex="-1" aria-current="true">Git y GitHub</span>
       </li>
 <li class="nav-item">
         <a href="/02-JS-I/README/" class="nav-link" role="menuitem">JS I</a>
@@ -82,7 +76,7 @@
             <div id="tocBox" class="row">
               
               <nav class="toc" >
-        <ul><li><a href="#--primero%3A-guardar-la-url-del-repositorio-de-github-con-el-nombre-de-origin">- Primero: Guardar la URL del repositorio de GitHub con el nombre de origin </a></li><li><a href="#--segundo%3A-verificar-que-la-url-se-haya-guardado-correctamente">- Segundo: Verificar que la URL se haya guardado correctamente </a></li><li><a href="#--tercero%3A-traer-la-versi%C3%B3n-del-repositorio-remoto-y-hacer-merge-para-crear-un-commit-con-los-archivos-de-ambas-partes.-podemos-usar-git-fetch-y-git-merge-o-solo-git-pull-con-el-flag---allow-unrelated-histories%3A">- Tercero: Traer la versión del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y git merge o solo git pull con el flag --allow-unrelated-histories: </a></li><li><a href="#por-%C3%BAltimo%2C-ahora-s%C3%AD-podemos-hacer-git-push-para-guardar-los-cambios-de-nuestro-repositorio-local-en-github%3A">Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub: </a></li></ul>
+        <ul><li><a href="#comandos%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB">Comandos👨🏻‍💻👩🏻‍💻 </a></li><li><a href="#ciclos-de-vida-o-estados-de-los-archivos-en-git-%F0%9F%92%9B">Ciclos de vida o estados de los archivos en Git 💛 </a></li><li><a href="#comandos-para-mover-archivos-entre-los-estados-de-git-%F0%9F%8F%83%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F">Comandos para mover archivos entre los estados de Git 🏃🏻‍♀️ </a></li><li><a href="#qu%C3%A9-es-un-branch-y-c%C3%B3mo-funciona-un-merge%3F-%F0%9F%A4%94">Qué es un Branch y cómo funciona un Merge? 🤔 </a></li><li><a href="#crea-un-repositorio-de-git-y-haz-tu-primer-commit-%E2%9C%A8">Crea un repositorio de Git y haz tu primer commit ✨ </a></li><li><a href="#analizar-cambios-en-los-archivos-de-tu-proyecto-con-git-%F0%9F%93%88%F0%9F%93%89%F0%9F%93%8A">Analizar cambios en los archivos de tu proyecto con Git 📈📉📊 </a></li><li><a href="#volver-en-el-tiempo-en-nuestro-repositorio-utilizando-reset-y-checkout-%F0%9F%8F%83%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%E2%8F%B1">Volver en el tiempo en nuestro repositorio utilizando reset y checkout 🏃🏻‍♀️⏱ </a></li><li><a href="#introducci%C3%B3n-a-las-ramas-o-branches-de-git-%F0%9F%8C%B3%F0%9F%8C%B1">Introducción a las ramas o branches de Git 🌳🌱 </a></li><li><a href="#fusi%C3%B3n-de-ramas-con-git-merge-%F0%9F%90%B1%E2%80%8D%F0%9F%8F%8D">Fusión de ramas con Git Merge 🐱‍🏍 </a></li><li><a href="#resoluci%C3%B3n-de-conflictos-al-hacer-un-merge-%F0%9F%93%83">Resolución de conflictos al hacer un Merge 📃 </a></li><li><a href="#flujo-de-trabajo-profesional-con-pull-requests-%F0%9F%93%88%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%8E%93%F0%9F%99%86%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%99%86%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F">Flujo de trabajo profesional con pull requests 📈👩🏻‍🎓🙆🏻‍♂️🙆🏻‍♀️ </a></li><li><a href="#reconstruir-commits-en-git-con-amend-%F0%9F%99%87%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%F0%9F%99%87%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%9B%A0">Reconstruir commits en Git con amend 🙇🏻‍♀️🙇🏻‍♂️🛠 </a></li><li><a href="#git-reset-y-reflog%3A-%C3%BAsese-en-caso-de-emergencia-%E2%9D%8C%F0%9F%9B%91%F0%9F%9A%AB">Git Reset y Reflog: úsese en caso de emergencia ❌🛑🚫 </a></li><li><a href="#buscar-en-archivos-y-commits-de-git-con-grep-y-log-%F0%9F%95%B5%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F">Buscar en archivos y commits de Git con Grep y log 🕵🏻‍♂️ </a></li></ul>
       </nav>
             </div>
           </div>
@@ -95,7 +89,7 @@
             </div>
             <div>
               
-              <img  src='https://github.com/Douglas-san-anton/Curso.Prep.Henry/raw/master/logo.png' height='70px'>
+              <!-- <img  src='https://github.com/Douglas-san-anton/Curso.Prep.Henry/raw/master/logo.png' height='70px'>
 <table width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
@@ -106,120 +100,114 @@
       </a>
     </td>
   </tr>
-</table>
+</table> -->
 <h1 id="git-y-github" tabindex="-1">Git y GitHub <a class="anchor-link" href="#git-y-github"></a></h1>
-<h1 id="comandos%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB" tabindex="-1">Comandos👨🏻‍💻👩🏻‍💻 <a class="anchor-link" href="#comandos%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB"></a></h1>
-<pre><code class="hljs">- git init: se utiliza para iniciar nuestro repositorio.
-- git add ArchivoEjemplo.js: crea el archivo pero no lo guarda de forma definitiva, lo almacena en (Staging Area).
-- git commit -m &quot;versión 1&quot;: aquí se generan cambios de &quot;Staging Area&quot; y con ( -m &quot;&quot;) se deja un mensaje que nos sea útil.
-- git add .: Agrega los archivos actualizados al repositorio, pero únicamente en la carpeta que te encuentras.
-- git commit -m &quot;Cambios v1&quot;: sirve para generar cambios sobre la versión antigua.
-- git status: sirve para revisar si has modificado o guardado los cambios hechos.
-- git log &quot;archivo.txt&quot;: sirve para ver el historial del archivo.
-- git push: sirve para enviar cambios al repositorio remoto.
-- git pull: sirve para recibir cambios de repositorio remoto a local.
-</code></pre>
-<h1 id="ciclos-de-vida-o-estados-de-los-archivos-en-git-%F0%9F%92%9B" tabindex="-1">Ciclos de vida o estados de los archivos en Git 💛 <a class="anchor-link" href="#ciclos-de-vida-o-estados-de-los-archivos-en-git-%F0%9F%92%9B"></a></h1>
+<h2 id="comandos%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB" tabindex="-1">Comandos👨🏻‍💻👩🏻‍💻 <a class="anchor-link" href="#comandos%F0%9F%91%A8%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%92%BB"></a></h2>
+<ul>
+<li><code>git init</code>: se utiliza para iniciar nuestro repositorio.</li>
+<li><code>git add ArchivoEjemplo.js</code>: crea el archivo pero no lo guarda de forma definitiva, lo almacena en (Staging Area).</li>
+<li><code>git commit -m &quot;versión 1&quot;</code>: aquí se generan cambios de “Staging Area” y con ( -m “”) se deja un mensaje que nos sea útil.</li>
+<li><code>git add .</code>: Agrega los archivos actualizados al repositorio, pero únicamente en la carpeta que te encuentras.</li>
+<li><code>git commit -m &quot;Cambios v1&quot;</code>: sirve para generar cambios sobre la versión antigua.</li>
+<li><code>git status</code>: sirve para revisar si has modificado o guardado los cambios hechos.</li>
+<li><code>git log &quot;archivo.txt&quot;</code>: sirve para ver el historial del archivo.</li>
+<li><code>git push</code>: sirve para enviar cambios al repositorio remoto.</li>
+<li><code>git pull</code>: sirve para recibir cambios de repositorio remoto a local.</li>
+</ul>
+<h2 id="ciclos-de-vida-o-estados-de-los-archivos-en-git-%F0%9F%92%9B" tabindex="-1">Ciclos de vida o estados de los archivos en Git 💛 <a class="anchor-link" href="#ciclos-de-vida-o-estados-de-los-archivos-en-git-%F0%9F%92%9B"></a></h2>
 <p>Cuando trabajamos con Git nuestros archivos pueden vivir y moverse entre 4 diferentes estados (cuando trabajamos remoto pueden ser más estados, pero lo estudiaremos más adelante)</p>
 <ul>
 <li>
-<p><strong>Archivos Tracked</strong>: son los archivos que viven dentro de Git, no tienen cambios pendientes y sus últimas actualizaciones han sido guardadas en el repositorio gracias a los comandos git add y git commit.</p>
+<p><strong>Archivos</strong> <em><strong>Tracked</strong></em>: son los archivos que viven dentro de Git, no tienen cambios pendientes y sus últimas actualizaciones han sido guardadas en el repositorio gracias a los comandos git add y git commit.</p>
 </li>
 <li>
-<p><strong>Archivos Staged</strong>: son archivos en staging. Viven dentro de Git y hay registro de ellos por que han sido afectados por el comando git add, aunque no sus últimos cambios. Git ya sabe de la existencia de estos últimos cambios, pero todavía no han sido guardados definitivamente en el repositorio por que falta ejecutar el comando git commit.</p>
+<p><strong>Archivos</strong> <em><strong>Staged</strong></em>: son archivos en staging. Viven dentro de Git y hay registro de ellos por que han sido afectados por el comando git add, aunque no sus últimos cambios. Git ya sabe de la existencia de estos últimos cambios, pero todavía no han sido guardados definitivamente en el repositorio por que falta ejecutar el comando git commit.</p>
 </li>
 <li>
-<p><strong>Archivos Unstaged</strong>: entiendelos como archivos “Traked pero Unstaged”. Son archivos que viven dentro de Git poro no han sido afectados por el comando git add ni mucho menos por git commit. Git tiene un registro de estos archivos, pero esta desactualizado, sus últimas versiones solo estan guardadas en su disco duro.</p>
+<p><strong>Archivos</strong> <em><strong>Unstaged</strong></em>: entiendelos como archivos “Traked pero Unstaged”. Son archivos que viven dentro de Git poro no han sido afectados por el comando git add ni mucho menos por git commit. Git tiene un registro de estos archivos, pero esta desactualizado, sus últimas versiones solo estan guardadas en su disco duro.</p>
 </li>
 <li>
-<p><strong>Archivos Untracked</strong>: son archivos que NO viven dentro de Git, solo en el disco duro. Nunca han sido afectados por git add, asi que Git no tiene registro de su existencia.</p>
+<p><strong>Archivos</strong> <em><strong>Untracked</strong></em>: son archivos que NO viven dentro de Git, solo en el disco duro. Nunca han sido afectados por git add, asi que Git no tiene registro de su existencia.</p>
 </li>
 </ul>
 <p>Recuerda que hay un caso muy raro donde los archivos tienen dos estados al mismo tiempo: Staged y Untracked. Esto pasa cuando guardas los cambios de un archivo en el área de Staging (con el comando git commit), pero antes de hacer commit para guardar los cambios en el repositorio haces nuevos cambios que todavía no han sido guardados en el área de Staging (en realidad, todo sigue funcionando igual pero es un poco divertido).</p>
-<h1 id="comandos-para-mover-archivos-entre-los-estados-de-git-%F0%9F%8F%83%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F" tabindex="-1">Comandos para mover archivos entre los estados de Git 🏃🏻‍♀️ <a class="anchor-link" href="#comandos-para-mover-archivos-entre-los-estados-de-git-%F0%9F%8F%83%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F"></a></h1>
+<h2 id="comandos-para-mover-archivos-entre-los-estados-de-git-%F0%9F%8F%83%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F" tabindex="-1">Comandos para mover archivos entre los estados de Git 🏃🏻‍♀️ <a class="anchor-link" href="#comandos-para-mover-archivos-entre-los-estados-de-git-%F0%9F%8F%83%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F"></a></h2>
 <ul>
 <li>
-<p><strong>git status</strong>: nos permite ver el estado de todos nuestros archivos y carpetas.</p>
+<p><code>git status</code>: nos permite ver el estado de todos nuestros archivos y carpetas.</p>
 </li>
 <li>
-<p><strong>git add</strong>: nos ayuda a mover archivos del Untracked o Unstaged al estado Staged. Podemos usar git nombre del archivo o carpeta para añadir archivos y carpetas individuales o git add -a para mover todos los archivos de nuestro proyecto ( tanto Untrackeds como Unstageds).</p>
+<p><code>git add</code>: nos ayuda a mover archivos del Untracked o Unstaged al estado Staged. Podemos usar git nombre del archivo o carpeta para añadir archivos y carpetas individuales o git add -a para mover todos los archivos de nuestro proyecto ( tanto Untrackeds como Unstageds).</p>
 </li>
 <li>
-<p><strong>git reset HEAD</strong>: nos ayuda a sacar los archivos del estado Staged para devolverlos a su estado anterior. Si los archivos venian de Unstaged, vuelven alli. Y lo mismo si venian de Untracked.</p>
+<p><code>git reset HEAD</code>: nos ayuda a sacar los archivos del estado Staged para devolverlos a su estado anterior. Si los archivos venian de Unstaged, vuelven alli. Y lo mismo si venian de Untracked.</p>
 </li>
 <li>
-<p><strong>git commit</strong>: nos ayuda a mover archivos de Unstaged a Tracked. Esta es una ocasión especial, los archivos han sido guardados o actualizados en el repositorio. Git nos pedira que dejemos un mensaje para recordar los cambios que hicimos y podemos usar el argumento -m para describirlo ( git commit -m “mensaje”).</p>
+<p><code>git commit</code>: nos ayuda a mover archivos de Unstaged a Tracked. Esta es una ocasión especial, los archivos han sido guardados o actualizados en el repositorio. Git nos pedira que dejemos un mensaje para recordar los cambios que hicimos y podemos usar el argumento -m para describirlo ( git commit -m “mensaje”).</p>
 </li>
 <li>
-<p><strong>git rm</strong>: este comando necesita algunos de los argumentos para poder ejecutarse correctamente:</p>
+<p><code>git rm</code>: este comando necesita algunos de los argumentos para poder ejecutarse correctamente:</p>
 </li>
 <li>
-<p><strong>git rm --cached</strong>: Mueve los archivos que le indiquemos al estado Untracked.</p>
+<p><code>git rm --cached</code>: Mueve los archivos que le indiquemos al estado Untracked.</p>
 </li>
 <li>
-<p><strong>git rm --force</strong>: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).</p>
+<p><code>git rm --force</code>: Elimina los archivos de Git y del disco duro. Git guarda el registro de la existencia de los archivos, por lo que podremos recuperarlos si es necesario (pero debemos usar comandos más avanzados).</p>
 </li>
 </ul>
-<h1 id="qu%C3%A9-es-un-branch-y-c%C3%B3mo-funciona-un-merge-en-git%3F-%F0%9F%A4%94" tabindex="-1">Qué es un Branch y cómo funciona un Merge en Git? 🤔 <a class="anchor-link" href="#qu%C3%A9-es-un-branch-y-c%C3%B3mo-funciona-un-merge-en-git%3F-%F0%9F%A4%94"></a></h1>
+<h2 id="qu%C3%A9-es-un-branch-y-c%C3%B3mo-funciona-un-merge%3F-%F0%9F%A4%94" tabindex="-1">Qué es un Branch y cómo funciona un Merge? 🤔 <a class="anchor-link" href="#qu%C3%A9-es-un-branch-y-c%C3%B3mo-funciona-un-merge%3F-%F0%9F%A4%94"></a></h2>
 <p>Checkout es para cambiar de rama. Sólo la crea con el modificador -b.<br>
 Unir dos Ramas lo conocemos como Merge.</p>
 <p>Estándar de equipos de desarrollo…</p>
-<pre><code class="hljs">- Rama Máster: va a producción.
-- Rama Development: se alojan las nuevas features, características y experimentos
- (para unirse al Máster cuando estén definitivamente listas).
-- Rama Hotfix: issues o errores se solucionan aquí para unirse al Master tan pronto sea posible.
-</code></pre>
-<h1 id="crea-un-repositorio-de-git-y-haz-tu-primer-commit-%E2%9C%A8" tabindex="-1">Crea un repositorio de Git y haz tu primer commit ✨ <a class="anchor-link" href="#crea-un-repositorio-de-git-y-haz-tu-primer-commit-%E2%9C%A8"></a></h1>
+<ul>
+<li>Rama <em><strong>Master</strong></em> o <em><strong>Main</strong></em>: va a producción.</li>
+<li>Rama <em><strong>Development</strong></em>: se alojan las nuevas features, características y experimentos<br>
+(para unirse al Máster cuando estén definitivamente listas).</li>
+<li>Rama <em><strong>Hotfix</strong></em>: issues o errores se solucionan aquí para unirse al Master tan pronto sea posible.</li>
+</ul>
+<h2 id="crea-un-repositorio-de-git-y-haz-tu-primer-commit-%E2%9C%A8" tabindex="-1">Crea un repositorio de Git y haz tu primer commit ✨ <a class="anchor-link" href="#crea-un-repositorio-de-git-y-haz-tu-primer-commit-%E2%9C%A8"></a></h2>
 <p>Le indicaremos a Git que queremos crear un nuevo repositorio para utilizar un sistema<br>
 de control de versiones.<br>
 Solo debemos posicionarnos en la carpeta raíz de nuestro proyecto y ejecutar el comando git init.</p>
 <p>Recuerda que al ejecutar este comando (u de aquí en adelante) vamos a tener una nueva carpeta llamada <strong>.git</strong><br>
 con toda la base de datos con cambios atómicos en nuestro proyecto.</p>
 <p>Recuerda que Git está optimizado para trabajar en equipo, por lo tanto, debemos darle un poco de información sobre nosotros. No debemos hacerlo todas las veces que ejecutamos un comando, basta con ejecutar solo una vez los siguientes comandos con tu información:</p>
-<pre><code class="hljs">Git config --global user.name &quot;tu nombre&quot;
-Git config --global user.email &quot;tu@email.com&quot;
-</code></pre>
+<pre class="language-shell"><code class="hljs language-shell"><span class="token function">git</span> config --global user.name <span class="token string">"tu nombre"</span><br><span class="token function">git</span> config --global user.email <span class="token string">"tu@email.com"</span></code></pre>
 <p>Existen muchas otras configuraciones de Git que puedes encontrar en el comando git config --list (o solo git config para ver una explicación más detallada)</p>
-<h1 id="analizar-cambios-en-los-archivos-de-tu-proyecto-con-git-%F0%9F%93%88%F0%9F%93%89%F0%9F%93%8A" tabindex="-1">Analizar cambios en los archivos de tu proyecto con Git 📈📉📊 <a class="anchor-link" href="#analizar-cambios-en-los-archivos-de-tu-proyecto-con-git-%F0%9F%93%88%F0%9F%93%89%F0%9F%93%8A"></a></h1>
-<pre><code class="hljs">- git log: muestra la identificación de los commits.
-
-- git show: nos muestra los cambios que han existido sobre un archivo y es muy útil para detectar cuando se produjeron ciertos cambios, qué se rompió y cómo lo podemos solucionar. Pero podemos ser mas detallados.
-
-- git diff: nos muestra la diferencia entre una version y otra, no necesariamente todos los cambios desde la creación. (Gif diff commitA commitB).
-</code></pre>
-<h1 id="volver-en-el-tiempo-en-nuestro-repositorio-utilizando-reset-y-checkout-%F0%9F%8F%83%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%E2%8F%B1" tabindex="-1">Volver en el tiempo en nuestro repositorio utilizando reset y checkout 🏃🏻‍♀️⏱ <a class="anchor-link" href="#volver-en-el-tiempo-en-nuestro-repositorio-utilizando-reset-y-checkout-%F0%9F%8F%83%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%E2%8F%B1"></a></h1>
+<h2 id="analizar-cambios-en-los-archivos-de-tu-proyecto-con-git-%F0%9F%93%88%F0%9F%93%89%F0%9F%93%8A" tabindex="-1">Analizar cambios en los archivos de tu proyecto con Git 📈📉📊 <a class="anchor-link" href="#analizar-cambios-en-los-archivos-de-tu-proyecto-con-git-%F0%9F%93%88%F0%9F%93%89%F0%9F%93%8A"></a></h2>
+<ul>
+<li><code>git log</code>: muestra la identificación de los commits.</li>
+<li><code>git show</code>: nos muestra los cambios que han existido sobre un archivo y es muy útil para detectar cuando se produjeron ciertos cambios, qué se rompió y cómo lo podemos solucionar. Pero podemos ser mas detallados.</li>
+<li><code>git diff</code>: nos muestra la diferencia entre una version y otra, no necesariamente todos los cambios desde la creación. (Gif diff commitA commitB).</li>
+</ul>
+<h2 id="volver-en-el-tiempo-en-nuestro-repositorio-utilizando-reset-y-checkout-%F0%9F%8F%83%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%E2%8F%B1" tabindex="-1">Volver en el tiempo en nuestro repositorio utilizando reset y checkout 🏃🏻‍♀️⏱ <a class="anchor-link" href="#volver-en-el-tiempo-en-nuestro-repositorio-utilizando-reset-y-checkout-%F0%9F%8F%83%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%E2%8F%B1"></a></h2>
 <ul>
 <li>
-<p><strong>git checkout + Id del commit</strong>: podemos volver a cualquier versión anterior de un archivo específico o incluso<br>
+<p><code>git checkout + Id del commit</code>: podemos volver a cualquier versión anterior de un archivo específico o incluso<br>
 de nuestro proyecto entero. Esta es también es la forma de movernos entre ramas.</p>
 </li>
 <li>
-<p><strong>git log --stat</strong>: commit descriptivo con cantidad de líneas agregadas y removidas por archivo.</p>
+<p><code>git log --stat</code>: commit descriptivo con cantidad de líneas agregadas y removidas por archivo.</p>
 </li>
 <li>
-<p><strong>git reset --soft ‘commit’</strong>: mantiene los archivos en el área de Staging para que podamos aplicar nuestros últimos cambios desde un commit anterior.</p>
+<p><code>git reset --soft 'commit'</code>: mantiene los archivos en el área de Staging para que podamos aplicar nuestros últimos cambios desde un commit anterior.</p>
 </li>
 <li>
-<p><strong>git reset --hard ‘commit’</strong>: borra toda la información que tengamos en el área de Staging. (Perdiendo todo para siempre).</p>
+<p><code>git reset --hard 'commit'</code>: borra toda la información que tengamos en el área de Staging. (Perdiendo todo para siempre).</p>
 </li>
 <li>
-<p><strong>git checkout master ‘archivo.txt’</strong>: volvemos a la versión madre.</p>
+<p><code>git checkout master 'archivo.txt'</code>: volvemos a la versión madre.</p>
 </li>
 </ul>
-<h1 id="introducci%C3%B3n-a-las-ramas-o-branches-de-git-%F0%9F%8C%B3%F0%9F%8C%B1" tabindex="-1">Introducción a las ramas o branches de Git 🌳🌱 <a class="anchor-link" href="#introducci%C3%B3n-a-las-ramas-o-branches-de-git-%F0%9F%8C%B3%F0%9F%8C%B1"></a></h1>
+<h2 id="introducci%C3%B3n-a-las-ramas-o-branches-de-git-%F0%9F%8C%B3%F0%9F%8C%B1" tabindex="-1">Introducción a las ramas o branches de Git 🌳🌱 <a class="anchor-link" href="#introducci%C3%B3n-a-las-ramas-o-branches-de-git-%F0%9F%8C%B3%F0%9F%8C%B1"></a></h2>
 <p>Las ramas son la forma de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.</p>
 <p>La cabecera o head representan la rama y el commit de esa rama donde estamos trabajando. Por defecto, esta cabecera aparecerá en el último commit de nuestra rama principal. Pero podemos cambiarlo al crear una rama (git branch rama, git checkout -b rama) o movernos en el tiempo a cualquier otro commit de cualquier otra rama con los comandos ( git reset id-commit, git checkout rama-o-id-commit).</p>
-<ul>
-<li><strong>git branch nombre de rama</strong>: crea una rama.</li>
-<li><strong>git checkout nombre de la rama</strong>: cambiarse de rama.<br><br>
-<strong>NOTA</strong>: Hacer commit antes de cambiar de ramas para no perder los datos.</li>
-</ul>
-<h1 id="fusi%C3%B3n-de-ramas-con-git-merge-%F0%9F%90%B1%E2%80%8D%F0%9F%8F%8D" tabindex="-1">Fusión de ramas con Git Merge 🐱‍🏍 <a class="anchor-link" href="#fusi%C3%B3n-de-ramas-con-git-merge-%F0%9F%90%B1%E2%80%8D%F0%9F%8F%8D"></a></h1>
+<pre class="language-shell"><code class="hljs language-shell"><span class="token function">git</span> branch <span class="token string">"nombre de rama"</span> // crea una rama<br><span class="token function">git</span> checkout <span class="token string">"nombre de la rama"</span> // cambiarse de rama</code></pre>
+<p><strong>NOTA</strong>: Hacer commit antes de cambiar de ramas para no perder los datos.</p>
+<h2 id="fusi%C3%B3n-de-ramas-con-git-merge-%F0%9F%90%B1%E2%80%8D%F0%9F%8F%8D" tabindex="-1">Fusión de ramas con Git Merge 🐱‍🏍 <a class="anchor-link" href="#fusi%C3%B3n-de-ramas-con-git-merge-%F0%9F%90%B1%E2%80%8D%F0%9F%8F%8D"></a></h2>
 <p>El comando git merge nos permite crear un nuevo commit con la combinación de dos ramas, la rama donde nos encontramos cuando ejecutamos el comando y la rama que le pasamos después del comando.</p>
-<ul>
-<li><strong>git merge cualquier-otra-rama</strong>.</li>
-</ul>
-<h1 id="resoluci%C3%B3n-de-conflictos-al-hacer-un-merge-%F0%9F%93%83" tabindex="-1">Resolución de conflictos al hacer un Merge 📃 <a class="anchor-link" href="#resoluci%C3%B3n-de-conflictos-al-hacer-un-merge-%F0%9F%93%83"></a></h1>
+<pre class="language-shell"><code class="hljs language-shell"><span class="token function">git</span> merge <span class="token string">"cualquier otra rama"</span></code></pre>
+<h2 id="resoluci%C3%B3n-de-conflictos-al-hacer-un-merge-%F0%9F%93%83" tabindex="-1">Resolución de conflictos al hacer un Merge 📃 <a class="anchor-link" href="#resoluci%C3%B3n-de-conflictos-al-hacer-un-merge-%F0%9F%93%83"></a></h2>
 <p>Git nunca borra nada a menos que se lo indiquemos. Cuando usamos los comandos git merge o git checkout estamos cambiando de rama pero creando un nuevo commit, no borrando ramas ni commits ( recuerda que puedes borrar commits con git reset / git branch -d)</p>
 <p>Los archivos con conflictos por el comando git merge entran en un nuevo estado que conocemos como Unmerged.<br>
 Funcionan muy parecido a los archivos en estado Unstaged, algo así como un estado intermedio entre Untracked y Unstaged, solo debemos ejecutar git add para pasarlos al área de Staging y git commit para aplicar los cambios en el repositorio.</p>
@@ -230,19 +218,20 @@ Funcionan muy parecido a los archivos en estado Unstaged, algo así como un esta
 <p>El <a href="http://Readme.md">Readme.md</a> es el archivo que veremos por defecto al entrar en un repositorio. Es una muy buena práctica configurarlo para describir el proyecto, los requerimientos y las instrucciones que debemos seguir para contribuir correctamente.</p>
 <p>Para clonar un repositorio desde GitHub (o cualquier otro servidor remoto) debemos copiar el URL (por ahora, usando HTTPS) y ejecutar el comando git clone + la URL que acabamos de copiar. Esto descargara la versión de nuestro proyecto que se encuentra en GitHub.</p>
 <p>Sin embargo, esto solo funciona para las personas que quieren empezar a contribuir en el proyecto. Si queremos conectar el repositorio de GitHub con nuestro repositorio local, el que creamos con git init, debemos ejecutar las siguientes instrucciones:</p>
-<h3 id="--primero%3A-guardar-la-url-del-repositorio-de-github-con-el-nombre-de-origin" tabindex="-1">- <strong>Primero:</strong> Guardar la URL del repositorio de GitHub con el nombre de origin <a class="anchor-link" href="#--primero%3A-guardar-la-url-del-repositorio-de-github-con-el-nombre-de-origin"></a></h3>
-<pre><code class="hljs">git remote add origin URL
-</code></pre>
-<h3 id="--segundo%3A-verificar-que-la-url-se-haya-guardado-correctamente" tabindex="-1">- <strong>Segundo</strong>: Verificar que la URL se haya guardado correctamente <a class="anchor-link" href="#--segundo%3A-verificar-que-la-url-se-haya-guardado-correctamente"></a></h3>
-<pre><code class="hljs">git remote
-git remote -v
-</code></pre>
-<h3 id="--tercero%3A-traer-la-versi%C3%B3n-del-repositorio-remoto-y-hacer-merge-para-crear-un-commit-con-los-archivos-de-ambas-partes.-podemos-usar-git-fetch-y-git-merge-o-solo-git-pull-con-el-flag---allow-unrelated-histories%3A" tabindex="-1">- <strong>Tercero</strong>: Traer la versión del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y git merge o solo git pull con el flag --allow-unrelated-histories: <a class="anchor-link" href="#--tercero%3A-traer-la-versi%C3%B3n-del-repositorio-remoto-y-hacer-merge-para-crear-un-commit-con-los-archivos-de-ambas-partes.-podemos-usar-git-fetch-y-git-merge-o-solo-git-pull-con-el-flag---allow-unrelated-histories%3A"></a></h3>
-<pre><code class="hljs">git pull origin master--allow-unrelated-histories
-</code></pre>
-<h3 id="por-%C3%BAltimo%2C-ahora-s%C3%AD-podemos-hacer-git-push-para-guardar-los-cambios-de-nuestro-repositorio-local-en-github%3A" tabindex="-1">Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub: <a class="anchor-link" href="#por-%C3%BAltimo%2C-ahora-s%C3%AD-podemos-hacer-git-push-para-guardar-los-cambios-de-nuestro-repositorio-local-en-github%3A"></a></h3>
-<pre><code class="hljs">git push origin master
-</code></pre>
+<ul>
+<li><strong>Primero:</strong> Guardar la URL del repositorio de GitHub con el nombre de origin</li>
+</ul>
+<pre class="language-bash"><code class="hljs language-bash"><span class="token function">git</span> remote <span class="token function">add</span> origin <span class="token operator">&lt;</span>URL<span class="token operator">></span></code></pre>
+<ul>
+<li><strong>Segundo</strong>: Verificar que la URL se haya guardado correctamente</li>
+</ul>
+<pre class="language-bash"><code class="hljs language-bash"><span class="token function">git</span> remote<br><span class="token function">git</span> remote -v</code></pre>
+<ul>
+<li><strong>Tercero</strong>: Traer la versión del repositorio remoto y hacer merge para crear un commit con los archivos de ambas partes. Podemos usar git fetch y git merge o solo git pull con el flag --allow-unrelated-histories:</li>
+</ul>
+<pre class="language-bash"><code class="hljs language-bash"><span class="token function">git</span> pull origin master--allow-unrelated-histories</code></pre>
+<h4 id="por-%C3%BAltimo%2C-ahora-s%C3%AD-podemos-hacer-git-push-para-guardar-los-cambios-de-nuestro-repositorio-local-en-github%3A" tabindex="-1">Por último, ahora sí podemos hacer git push para guardar los cambios de nuestro repositorio local en GitHub: <a class="anchor-link" href="#por-%C3%BAltimo%2C-ahora-s%C3%AD-podemos-hacer-git-push-para-guardar-los-cambios-de-nuestro-repositorio-local-en-github%3A"></a></h4>
+<pre class="language-bash"><code class="hljs language-bash"><span class="token function">git</span> push origin master</code></pre>
 <h1 id="manejo-de-ramas-en-github-%F0%9F%8C%B3%F0%9F%8C%B1" tabindex="-1">Manejo de ramas en GitHub 🌳🌱 <a class="anchor-link" href="#manejo-de-ramas-en-github-%F0%9F%8C%B3%F0%9F%8C%B1"></a></h1>
 <p>Puedes trabajar con ramas que nunca enviamos a GitHub, así como pueden haber ramas importantes en GitHub que nunca usas en el repositorio local. Lo importante es que aprendas a manejarlas para trabajar profesionalmente.</p>
 <ul>
@@ -254,21 +243,22 @@ git remote -v
 <p>Por defecto, cualquiera puede clonar o descargar tu proyecto desde GitHub, pero no pueden crear commits, ni ramas ni nada.</p>
 <p>Existen varias formas de solucionar esto para poder aceptar contribuciones. Una de ellas es añadir a cada persona de nuestro equipo como colaborador de nuestro repositorio.</p>
 <p>Solo debemos entrar a la configuración de colaboradores de nuestro proyecto (Repositorio &gt; Settings &gt; Collaborators) y añadir el email o username de los nuevos colaboradores.</p>
-<h1 id="flujo-de-trabajo-profesional-con-pull-requests-%F0%9F%93%88%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%8E%93%F0%9F%99%86%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%99%86%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F" tabindex="-1">Flujo de trabajo profesional con pull requests 📈👩🏻‍🎓🙆🏻‍♂️🙆🏻‍♀️ <a class="anchor-link" href="#flujo-de-trabajo-profesional-con-pull-requests-%F0%9F%93%88%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%8E%93%F0%9F%99%86%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%99%86%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F"></a></h1>
+<h2 id="flujo-de-trabajo-profesional-con-pull-requests-%F0%9F%93%88%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%8E%93%F0%9F%99%86%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%99%86%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F" tabindex="-1">Flujo de trabajo profesional con pull requests 📈👩🏻‍🎓🙆🏻‍♂️🙆🏻‍♀️ <a class="anchor-link" href="#flujo-de-trabajo-profesional-con-pull-requests-%F0%9F%93%88%F0%9F%91%A9%F0%9F%8F%BB%E2%80%8D%F0%9F%8E%93%F0%9F%99%86%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%99%86%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F"></a></h2>
 <p>En un entorno profesional normalmente se bloquea la rama master, y para enviar código a dicha rama pasa por un code review y luego de su aprobación se unen códigos con los llamados merge request.</p>
 <p>Para realizar pruebas enviamos el código a servidores que normalmente los llamamos Staging develop (servidores de pruebas) luego de que se realizan las pruebas pertinentes tanto de código como de la aplicación estos pasan a el servidor de producción con el ya antes mencionado merge request.</p>
 <p>Ignorar archivos en el Repositorio con .gitignore</p>
 <p>No todos los archivos que agregas a un proyecto deberían ir a un repositorio, por ejemplo cuando tienes un archivo donde están tus contraseñas que comúnmente tienen la extensión .env o cuando te estas conectando a una base de datos, son archivos que nadie debe ver.</p>
-<h1 id="reconstruir-commits-en-git-con-amend-%F0%9F%99%87%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%F0%9F%99%87%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%9B%A0" tabindex="-1">Reconstruir commits en Git con amend 🙇🏻‍♀️🙇🏻‍♂️🛠 <a class="anchor-link" href="#reconstruir-commits-en-git-con-amend-%F0%9F%99%87%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%F0%9F%99%87%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%9B%A0"></a></h1>
-<p>A veces hacemos un commit, pero resulta que no queríamos mandarlo porque faltaba algo más. Utilizamos <strong>git commit --amend</strong>, amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agrega al commit anterior.</p>
-<h1 id="git-reset-y-reflog%3A-%C3%BAsese-en-caso-de-emergencia-%E2%9D%8C%F0%9F%9B%91%F0%9F%9A%AB" tabindex="-1">Git Reset y Reflog: úsese en caso de emergencia ❌🛑🚫 <a class="anchor-link" href="#git-reset-y-reflog%3A-%C3%BAsese-en-caso-de-emergencia-%E2%9D%8C%F0%9F%9B%91%F0%9F%9A%AB"></a></h1>
-<p>¿Qué pasa cuando todo se rompe y no sabemos qué está pasando?<br> Con git reset hashDelHEAD nos devolvemos al estado en que el proyecto funcionaba.</p>
-<pre><code class="hljs">- git reset --soft hashDelHEAD te mantiene lo que tengas en Staging ahí.
-
-- git reset --hard hashDelHEAD resetea absolutamente todo incluyendo lo que tengas en Staging.
-</code></pre>
+<h2 id="reconstruir-commits-en-git-con-amend-%F0%9F%99%87%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%F0%9F%99%87%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%9B%A0" tabindex="-1">Reconstruir commits en Git con amend 🙇🏻‍♀️🙇🏻‍♂️🛠 <a class="anchor-link" href="#reconstruir-commits-en-git-con-amend-%F0%9F%99%87%F0%9F%8F%BB%E2%80%8D%E2%99%80%EF%B8%8F%F0%9F%99%87%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F%F0%9F%9B%A0"></a></h2>
+<p>A veces hacemos un commit, pero resulta que no queríamos mandarlo porque faltaba algo más. Utilizamos <code>git commit --amend</code>, amend en inglés es remendar y lo que hará es que los cambios que hicimos nos los agrega al commit anterior.</p>
+<h2 id="git-reset-y-reflog%3A-%C3%BAsese-en-caso-de-emergencia-%E2%9D%8C%F0%9F%9B%91%F0%9F%9A%AB" tabindex="-1">Git Reset y Reflog: úsese en caso de emergencia ❌🛑🚫 <a class="anchor-link" href="#git-reset-y-reflog%3A-%C3%BAsese-en-caso-de-emergencia-%E2%9D%8C%F0%9F%9B%91%F0%9F%9A%AB"></a></h2>
+<p>¿Qué pasa cuando todo se rompe y no sabemos qué está pasando?</p>
+<p>Con git reset hashDelHEAD nos devolvemos al estado en que el proyecto funcionaba.</p>
+<ul>
+<li><code>git reset --soft &lt;hashDelHEAD&gt;</code> te mantiene lo que tengas en Staging ahí.</li>
+<li><code>git reset --hard &lt;hashDelHEAD&gt;</code> resetea absolutamente todo incluyendo lo que tengas en Staging.</li>
+</ul>
 <p>Git reset es una mala práctica, no deberías usarlo en ningún momento; debe ser nuestro último recurso.</p>
-<h1 id="buscar-en-archivos-y-commits-de-git-con-grep-y-log-%F0%9F%95%B5%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F" tabindex="-1">Buscar en archivos y commits de Git con Grep y log 🕵🏻‍♂️ <a class="anchor-link" href="#buscar-en-archivos-y-commits-de-git-con-grep-y-log-%F0%9F%95%B5%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F"></a></h1>
+<h2 id="buscar-en-archivos-y-commits-de-git-con-grep-y-log-%F0%9F%95%B5%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F" tabindex="-1">Buscar en archivos y commits de Git con Grep y log 🕵🏻‍♂️ <a class="anchor-link" href="#buscar-en-archivos-y-commits-de-git-con-grep-y-log-%F0%9F%95%B5%F0%9F%8F%BB%E2%80%8D%E2%99%82%EF%B8%8F"></a></h2>
 <p>A medida que nuestro proyecto se hace grande vamos a querer buscar ciertas cosas.</p>
 <p>Por ejemplo: ¿Cuántas veces en nuestro proyecto utilizamos la palabra color?</p>
 <p>Para buscar utilizamos el comando git grep color y nos buscará en todo el proyecto los archivos en donde está la palabra color.</p>
@@ -284,7 +274,7 @@ git remote -v
 
           <div class="row" id="feedbackBox">
                 Qué te pareció la clase?
-              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=' target="_blank">
+              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=Git y GitHub' target="_blank">
               <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
             </a>
               Dejanos tu feedback!

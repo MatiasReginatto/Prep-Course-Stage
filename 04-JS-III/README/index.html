@@ -32,19 +32,13 @@
         <a href="/00-PrimerosPasos/README/" class="nav-link" role="menuitem">Primeros Pasos</a>
       </li>
 <li class="nav-item">
-        <a href="/00-PrimerosPasos/editorTexto/" class="nav-link" role="menuitem">Editor de Texto</a>
-      </li>
-<li class="nav-item">
-        <a href="/00-PrimerosPasos/git/" class="nav-link" role="menuitem">Git1</a>
+        <a href="/01-Git/README/" class="nav-link" role="menuitem">Git</a>
       </li>
 <li class="nav-item">
         <a href="/00-PrimerosPasos/github/" class="nav-link" role="menuitem">GitHub</a>
       </li>
 <li class="nav-item">
-        <a href="/00-PrimerosPasos/node/" class="nav-link" role="menuitem">Node.JS</a>
-      </li>
-<li class="nav-item">
-        <a href="/01-Git/README/" class="nav-link" role="menuitem">Git</a>
+        <a href="/01-Git/Git y GitHub/" class="nav-link" role="menuitem">Git y GitHub</a>
       </li>
 <li class="nav-item">
         <a href="/02-JS-I/README/" class="nav-link" role="menuitem">JS I</a>
@@ -117,7 +111,7 @@
 <h2 id="introducci%C3%B3n-a-los-arrays-(matrices%2Farreglos)" tabindex="-1">Introducción a los arrays (matrices/arreglos) <a class="anchor-link" href="#introducci%C3%B3n-a-los-arrays-(matrices%2Farreglos)"></a></h2>
 <p>En la lección anterior discutimos los 3 tipos de datos básicos (cadenas/strings, números y booleanos) y cómo asignar esos tipos de datos a las variables. Discutimos cómo una variable solo puede apuntar a una sola cadena, número o booleano. Sin embargo, en muchos casos queremos poder apuntar a una colección de tipos de datos. Por ejemplo, ¿qué pasaría si quisiéramos hacer un seguimiento del nombre de cada estudiante en esta clase usando una sola variable, <code>nombresEstudiantes</code>. Podemos hacer eso usando Arrays. Podemos pensar en las matrices como contenedores de almacenamiento para colecciones de datos. Construir una matriz es simple, declarar una variable y establecerla en []. Luego podemos agregar al contenedor (separadas por coma) tantas cadenas, números o booleanos como queramos y acceder a esos elementos cuando lo deseemos.</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">const</span> nombresEstudiantes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Martin'</span><span class="token punctuation">,</span> <span class="token string">'Antonio'</span><span class="token punctuation">,</span> <span class="token string">'Sara'</span><span class="token punctuation">,</span> <span class="token string">'Samuel'</span><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
-<h3 id=".length" tabindex="-1">.length <a class="anchor-link" href="#.length"></a></h3>
+<h3 id=".length" tabindex="-1"><em><strong>.length</strong></em> <a class="anchor-link" href="#.length"></a></h3>
 <p>Al igual que el tipo de dato <em>String</em> tiene un método incorporado <code>.length</code>, también lo hace la matriz. De hecho, la matriz tiene muchos métodos incorporados útiles (los discutiremos en lecciones posteriores). Al igual que la cadena <code>.length</code> cuenta los caracteres, la matriz<code>.length</code> devolverá el número de elementos en una matriz:</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">const</span> nombresEstudiantes <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Martin'</span><span class="token punctuation">,</span> <span class="token string">'Antonio'</span><span class="token punctuation">,</span> <span class="token string">'Sara'</span><span class="token punctuation">,</span> <span class="token string">'Samuel'</span><span class="token punctuation">]</span><span class="token punctuation">;</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>nombresEstudiantes<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 4</span></code></pre>
 <h3 id="acceso-a-elementos-en-una-matriz" tabindex="-1">Acceso a elementos en una matriz <a class="anchor-link" href="#acceso-a-elementos-en-una-matriz"></a></h3>

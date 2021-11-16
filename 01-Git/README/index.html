@@ -32,19 +32,13 @@
         <a href="/00-PrimerosPasos/README/" class="nav-link" role="menuitem">Primeros Pasos</a>
       </li>
 <li class="nav-item">
-        <a href="/00-PrimerosPasos/editorTexto/" class="nav-link" role="menuitem">Editor de Texto</a>
-      </li>
-<li class="nav-item">
-        <a href="/00-PrimerosPasos/git/" class="nav-link" role="menuitem">Git1</a>
+        <span class="nav-link active" tabindex="-1" aria-current="true">Git</span>
       </li>
 <li class="nav-item">
         <a href="/00-PrimerosPasos/github/" class="nav-link" role="menuitem">GitHub</a>
       </li>
 <li class="nav-item">
-        <a href="/00-PrimerosPasos/node/" class="nav-link" role="menuitem">Node.JS</a>
-      </li>
-<li class="nav-item">
-        <span class="nav-link active" tabindex="-1" aria-current="true">Git</span>
+        <a href="/01-Git/Git y GitHub/" class="nav-link" role="menuitem">Git y GitHub</a>
       </li>
 <li class="nav-item">
         <a href="/02-JS-I/README/" class="nav-link" role="menuitem">JS I</a>
@@ -122,9 +116,7 @@ Como se pueden imaginar, este sistema funciona <em>bien</em> para trabajar solos
 <p>Para solventar este problema, se desarrollaron los sistemas de control de versiones centralizados (<em>Centralized Version Control Systems</em> o <strong>CVCSs</strong> en inglés). Estos sistemas, como <strong>CVS</strong>, <strong>Subversion</strong>, y <strong>Perforce</strong>, tienen un único servidor que contiene todos los archivos versionados, y varios clientes descargan los archivos desde ese lugar central. Durante muchos años éste ha sido el estándar para el control de versiones.</p>
 <p>Este sistema ofrece varias ventajas, como por ejemplo: Todo el mundo puede saber en qué están trabajando los demás colaboradores y los administradores tienen control sobre qué archivos pueden ver/modificar cada colaborador. Pero tambien presenta un <em>problema importante</em>:  que hay un <strong>punto único de fallo</strong>. ¿Si éste server se cae? Nadie puede seguir trabajando ni trackeando sus cambios. ¿O si se rompe y no hay backups? Se pierde absolutamente <em>todo</em> el trabajo realizado.</p>
 <h3 id="distribuido" tabindex="-1">Distribuido <a class="anchor-link" href="#distribuido"></a></h3>
-<div class='imgDivBorderless'>
 <p><img src="/_src/assets/01-Git/distribuido.png" alt="Distribuido"></p>
-</div>
 <p>Es aquí donde entran los sistemas de control de versiones distribuidos (<em>Distributed Version Control Systems</em> o <strong>DVCSs</strong> en inglés). En un DVCS (como <strong>Git</strong>, <strong>Mercurial</strong>, <strong>Bazaar</strong> o <strong>Darcs</strong>), los clientes no sólo descargan la última instantánea de los archivos: replican completamente el repositorio. Así, si un servidor muere, y estos sistemas estaban colaborando a través de él, cualquiera de los repositorios de los clientes puede copiarse en el servidor para restaurarlo.</p>
 <h2 id="historia-de-git" tabindex="-1">Historia de Git <a class="anchor-link" href="#historia-de-git"></a></h2>
 <p>Como muchas de las grandes cosas en esta vida, <strong>Git</strong> comenzó con un poco de destrucción creativa y encendida polémica. El núcleo de Linux es un proyecto de software de código abierto con un alcance bastante grande. Durante la mayor parte del mantenimiento del núcleo de Linux (1991-2002), los cambios en el software se pasaron en forma de parches y archivos. En 2002, el proyecto del núcleo de Linux empezó a usar un DVCS propietario llamado <strong>BitKeeper</strong>.</p>
@@ -139,9 +131,7 @@ Como se pueden imaginar, este sistema funciona <em>bien</em> para trabajar solos
 <p>Desde su nacimiento en 2005, Git ha evolucionado y madurado para ser fácil de usar y aún conservar estas cualidades iniciales. Es tremendamente rápido, muy eficiente a gran escala, y tiene un increíble sistema de ramificación (branching) para desarrollo no lineal.</p>
 <h2 id="conceptos-de-git" tabindex="-1">Conceptos de Git <a class="anchor-link" href="#conceptos-de-git"></a></h2>
 <p>Git modela sus datos como un conjunto de instantáneas de un mini sistema de archivos. Cada vez que confirmas un cambio, o guardas el estado de tu proyecto en Git, él básicamente hace una foto del aspecto de todos tus archivos en ese momento, y guarda una referencia a esa instantánea. Para ser eficiente, si los archivos no se han modificado, Git no almacena el archivo de nuevo, sólo un enlace al archivo anterior idéntico que ya tiene almacenado.</p>
-<div class='imgDivBorderless'>
 <p><img src="/_src/assets/01-Git/snapshots.png" alt="snapshots"></p>
-</div>
 <p>La mayoría de las operaciones en Git sólo necesitan archivos y recursos locales para operar. Por lo general no se necesita información de ningún otro ordenador de tu red. Como tienes toda la historia del proyecto ahí mismo, en tu disco local, la mayoría de las operaciones parecen prácticamente inmediatas (con otros sistemas el proceso involucra llamados por red que generan retardos importantes).</p>
 <h2 id="integridad" tabindex="-1">Integridad <a class="anchor-link" href="#integridad"></a></h2>
 <p>Todo en Git es verificado mediante una suma de comprobación (<strong>checksum</strong> en inglés) antes de ser almacenado, y es identificado a partir de ese momento mediante dicha suma. <strong>Esto significa que es imposible cambiar los contenidos de cualquier archivo o directorio sin que Git lo sepa.</strong></p>
@@ -156,9 +146,7 @@ Como se pueden imaginar, este sistema funciona <em>bien</em> para trabajar solos
 <li><strong>modified</strong>: significa que has modificado el archivo pero todavía no lo has commiteado a tu base de datos.</li>
 <li><strong>staged</strong>: significa que has marcado un archivo modificado en su versión actual para que vaya en tu próxima commiteada.</li>
 </ul>
-<div class='imgDivBorderless'>
 <p><img src="/_src/assets/01-Git/estados.png" alt="Estados"></p>
-</div>
 <p>Hay un archivo simple, generalmente contenido en tu directorio de Git, llamado que almacena información acerca de lo que va a ir en tu próxima confirmación, al contenido de este archivo. O al archivo mismo se lo conoce como <strong>staging area</strong>.</p>
 <p>Sabiendo esto, el flujo de trabajo básico en Git sería algo así:</p>
 <ul>
