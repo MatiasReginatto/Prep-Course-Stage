@@ -23,50 +23,53 @@
       </navbar>
 
       <div id='main' class="container-fluid">
-        <div id='headerTags' class="row">
+        <div id='header' >
           
-          <ul class="nav nav-tabs justify-content-center">
+          
+         
+          <ul class="nav">
       
-      <li class="nav-item">
+      <li class="link">
         <a href="/" class="nav-link" role="menuitem">Intro</a>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/00-PrimerosPasos/README/" class="nav-link" role="menuitem">Primeros Pasos</a>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/01-Git/README/" class="nav-link" role="menuitem">Git</a>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/00-PrimerosPasos/github/" class="nav-link" role="menuitem">GitHub</a>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/01-Git/Git y GitHub/" class="nav-link" role="menuitem">Git y GitHub</a>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/02-JS-I/README/" class="nav-link" role="menuitem">JS I</a>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/03-JS-II/README/" class="nav-link" role="menuitem">JS II</a>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/04-JS-III/README/" class="nav-link" role="menuitem">JS III</a>
       </li>
-<li class="nav-item">
-        <span class="nav-link active" tabindex="-1" aria-current="true">JS IV</span>
+<li class="link">
+        <span class="nav-link activeLink" tabindex="-1" aria-current="true">JS IV</span>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/06-JS-V/README/" class="nav-link" role="menuitem">JS V</a>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/07-JS-VI/README/" class="nav-link" role="menuitem">JS VI</a>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/08-HTML/README/" class="nav-link" role="menuitem">HTML</a>
       </li>
-<li class="nav-item">
+<li class="link">
         <a href="/09-CSS-Positioning/README/" class="nav-link" role="menuitem">CSS</a>
       </li>
     </ul>
+
         </div>
 
         <div class="row">
@@ -78,7 +81,7 @@
             <div id="tocBox" class="row">
               
               <nav class="toc" >
-        <ul><li><a href="#introducci%C3%B3n-a-los-objetos">Introducción a los Objetos </a><ul><li><a href="#pares-clave%3Avalor-(key%3Avalue)">Pares Clave:Valor (Key:Value) </a></li><li><a href="#acceder-a-los-valores">Acceder a los valores </a></li><li><a href="#asignaci%C3%B3n-de-valores">Asignación de valores </a></li></ul></li><li><a href="#eliminando-propiedades">Eliminando propiedades </a></li><li><a href="#m%C3%A9todos">Métodos </a></li><li><a href="#bucles-for%E2%80%A6in">Bucles for…in </a></li><li><a href="#la-palabra-clave-%E2%80%98this%E2%80%99">La palabra clave ‘this’ </a></li><li><a href="#objetos-en-javascript">Objetos en Javascript </a></li><li><a href="#recursos-adicionales">Recursos adicionales </a></li><li><a href="#homework">Homework </a></li></ul>
+        <ul><li><a href="#introducci%C3%B3n-a-los-objetos">Introducción a los Objetos </a><ul><li><a href="#pares-clave%3Avalor-(key%3Avalue)">Pares Clave:Valor (Key:Value) </a></li><li><a href="#acceder-a-los-valores">Acceder a los valores </a></li><li><a href="#asignaci%C3%B3n-de-valores">Asignación de valores </a></li></ul></li><li><a href="#eliminando-propiedades">Eliminando propiedades </a></li><li><a href="#m%C3%A9todos">Métodos </a></li><li><a href="#bucles-for%E2%80%A6in">Bucles for…in </a></li><li><a href="#la-palabra-clave-%E2%80%98this%E2%80%99">La palabra clave ‘this’ </a><ul><li><a href="#this-y-el-execution-context">This y el Execution Context </a></li></ul></li><li><a href="#objetos-en-javascript">Objetos en Javascript </a></li><li><a href="#recursos-adicionales">Recursos adicionales </a></li><li><a href="#homework">Homework </a></li></ul>
       </nav>
             </div>
           </div>
@@ -91,18 +94,7 @@
             </div>
             <div>
               
-              <!-- <table width="100%" style='table-layout:fixed;'>
-  <tr>
-    <td>
-      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=05-JS-IV">
-        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
-        <br>
-        Hacé click acá para dejar tu feedback sobre esta clase.
-      </a>
-    </td>
-  </tr>
-</table> -->
-<h1 id="javascript-iv" tabindex="-1">Javascript IV <a class="anchor-link" href="#javascript-iv"></a></h1>
+              <h1 id="javascript-iv" tabindex="-1">JavaScript IV <a class="anchor-link" href="#javascript-iv"></a></h1>
 <h4 id="objetos" tabindex="-1">Objetos <a class="anchor-link" href="#objetos"></a></h4>
 <p>En esta lección cubriremos:</p>
 <ul>
@@ -143,17 +135,17 @@
 <p>Los objetos tienen una palabra clave autorreferencial que se puede aplicar en cada objeto llamado <code>this</code>. Cuando se llama dentro de un objeto, se refiere a ese mismo objeto. <code>this</code> puede usarse para acceder a otras claves en el mismo objeto, y es especialmente útil en métodos:</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">const</span> usuario <span class="token operator">=</span> <span class="token punctuation">{</span><br>    username<span class="token operator">:</span> <span class="token string">'juan.perez'</span><span class="token punctuation">,</span><br>    password<span class="token operator">:</span> <span class="token string">'loremipsumpwd123'</span><span class="token punctuation">,</span><br>    lovesJavascript<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><br>    favoriteNumber<span class="token operator">:</span> <span class="token number">42</span><span class="token punctuation">,</span><br>    <span class="token function-variable function">decirHola</span><span class="token operator">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span><br>        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span> <span class="token keyword">this</span><span class="token punctuation">.</span>username <span class="token operator">+</span> <span class="token string">' manda saludos!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span><br><br>usuario<span class="token punctuation">.</span><span class="token function">decirHola</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 'juan.perez manda saludos!'</span></code></pre>
 <p>Nota: la palabra clave <code>this</code> a veces puede ser uno de los temas más difíciles en Javascript. Lo estamos usando muy básicamente aquí, pero el tema se vuelve mucho más complejo muy pronto.</p>
-<h4 id="this-y-el-execution-context" tabindex="-1"><code>this</code> y el Execution Context <a class="anchor-link" href="#this-y-el-execution-context"></a></h4>
+<h3 id="this-y-el-execution-context" tabindex="-1"><em><strong>This</strong></em> y el Execution Context <a class="anchor-link" href="#this-y-el-execution-context"></a></h3>
 <ul>
 <li>
-<h5>Contexto global inicial</h5>
+<h4 id="contexto-global-inicial" tabindex="-1">Contexto global inicial <a class="anchor-link" href="#contexto-global-inicial"></a></h4>
 </li>
 </ul>
 <p>Este es el caso cuando ejecutamos código en el contexto global (afuera de cualquier función). En este caso <code>this</code> hace referencia al objeto <code>global</code>, en el caso del browser hace referencia a <code>window</code>.</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token comment">// En el browser esto es verdad:</span><br><span class="token operator">></span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">===</span> window<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token operator">&lt;</span> <span class="token boolean">true</span><br><br><span class="token operator">></span> <span class="token keyword">this</span><span class="token punctuation">.</span>a <span class="token operator">=</span> <span class="token number">37</span><span class="token punctuation">;</span><br><br><span class="token operator">></span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>window<span class="token punctuation">.</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token operator">&lt;</span> <span class="token number">37</span></code></pre>
 <ul>
 <li>
-<h5>En el contexto de una función</h5>
+<h4 id="en-el-contexto-de-una-funci%C3%B3n" tabindex="-1">En el contexto de una función <a class="anchor-link" href="#en-el-contexto-de-una-funci%C3%B3n"></a></h4>
 </li>
 </ul>
 <p>Cuando estamos dentro de una función, el valor de <code>this</code> va a depender de <em>cómo sea invocada la función</em>.</p>
@@ -164,7 +156,7 @@
 </blockquote>
 <ul>
 <li>
-<h5>Como método de un objeto</h5>
+<h4 id="como-m%C3%A9todo-de-un-objeto" tabindex="-1">Como método de un objeto <a class="anchor-link" href="#como-m%C3%A9todo-de-un-objeto"></a></h4>
 </li>
 </ul>
 <p>Cuando usamos el <em>keyword</em> <code>this</code> dentro de una función que es un método de un objeto, <code>this</code> toma hace referencia al objeto sobre el cual se llamó el método:</p>
@@ -191,23 +183,34 @@ De hecho, si buscamos dentro del objeto global la variable <code>nombre</code>, 
 </ul>
 <h2 id="homework" tabindex="-1">Homework <a class="anchor-link" href="#homework"></a></h2>
 <p>Completa la tarea descrita en el archivo <a href="https://github.com/atralice/Curso.Prep.Henry/tree/master/05-JS-IV/homework">README</a></p>
+<!-- <table width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=05-JS-IV">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table> -->
 
             </div>
           </div>
         </div>
 
-          <div class="row" id="feedbackBox">
+        <div class="row" id="feedbackBox">
                 Qué te pareció la clase?
               <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=JavaScript IV: Objetos' target="_blank">
-              <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
-            </a>
+            <img src="https://static.thenounproject.com/png/204643-200.png" width="110"/>
+          </a>
               Dejanos tu feedback!
           </div>
 
       </div>
 
       <div id="footer">
-          <p>Hecho con 💛 por alumnos de Henry</p>
+        <p>Hecho con 💛 por alumnos de Henry</p>
       </div>
 
       
@@ -282,6 +285,6 @@ De hecho, si buscamos dentro del objeto global la variable <code>nombre</code>, 
     }
   </script>
   
-      
+
     </body>
   </html>
