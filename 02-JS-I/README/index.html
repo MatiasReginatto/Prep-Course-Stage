@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,31 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/_src/styles/lesson.css">
+    <link rel="stylesheet" href="/_src/styles/fonts.css">
+    <link rel="stylesheet" href="/_src/styles/main.css">
+    <link rel="stylesheet" href="/_src/styles/code.css">
 
     <title>JavaScript I | Henry Prep Course </title>
   </head>
 
   <body>
     <div class="reader-bar-start">
-      <navbar class="navbar fixed-top navbar-light bg-black">
-        <div class="container-fluid">
-          <img src="/_src/assets/logo-white.png" alt='logo Henry' height=27px class="d-inline-block align-text-top">
+
+      <div id="navbarContainer">
+        <div id="navbarContained">
+          <div>
+            <img src="/_src/assets/logo-white.png" alt='logo Henry' height=27px class="d-inline-block align-text-top">
+          </div>
           <div>
             <span id="lessonTitle">JavaScript I</span> | <span>Prep Course</span>
           </div>
         </div>
-      </navbar>
+      </div>
 
-              <div id="feedbackBox">
-              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=' target="_blank">
-            
-              Dejanos tu feedback!👍
-          </a>
-          </div>
-
-
-      <div id='main' class="container-fluid">
+      <div id='main'>
         <div id='header' >
           
           <ul class="nav">
@@ -75,35 +74,33 @@
         <a href="/09-CSS-Positioning/README/" class="nav-link" role="menuitem">CSS</a>
       </li>
     </ul>
-
         </div>
 
-        <div class="row">
-
-          <div id='sidebar'>
-            <div id="tocTitle">
+        <div id='sidebar'>
+          <div id="tocTitle">
             Contenido de la clase
             </div>
-            <div id="tocBox">
-              
-              <nav class="toc" >
-        <ul><li><a href="#variables">Variables </a></li><li><a href="#tipos-de-datos">Tipos de Datos </a></li><li><a href="#operadores">Operadores </a></li><li><a href="#precedencia-de-operadores-y-asociatividad">Precedencia de Operadores y Asociatividad </a></li><li><a href="#math">Math </a><ul><li><a href="#%2B---*-%2F-%3D">+ - * / = </a></li><li><a href="#%25">% </a></li></ul></li><li><a href="#objetos-globales-y-m%C3%A9todos">Objetos Globales y métodos </a><ul><li><a href="#math.pow">Math.pow </a></li><li><a href="#math.round-%2C-math.floor%2C-math.ceil">Math.round , Math.floor, Math.ceil </a></li><li><a href="#.length">.length </a></li></ul></li><li><a href="#introducci%C3%B3n-a-las-funciones">Introducción a las Funciones </a><ul><li><a href="#anatom%C3%ADa-de-una-funci%C3%B3n">Anatomía de una Función </a></li><li><a href="#argumentos">Argumentos </a></li><li><a href="#declaraci%C3%B3n-%E2%80%9Creturn%E2%80%9D-y-scope">Declaración “return” y Scope </a></li></ul></li><li><a href="#control-de-flujo-y-operadores-de-comparaci%C3%B3n">Control de flujo y operadores de comparación </a></li><li><a href="#recursos-adicionales">Recursos adicionales </a></li><li><a href="#homework">Homework </a></li></ul>
+          <div id="tocBox">
+            
+            <nav class="toc" >
+        <ul><li><a href="#variables">Variables </a><ul><li><a href="#var">var </a></li><li><a href="#let">let </a></li><li><a href="#const">const </a></li></ul></li><li><a href="#tipos-de-datos">Tipos de Datos </a><ul><li><a href="#strings">Strings </a></li><li><a href="#numbers">Numbers </a></li><li><a href="#boolean">Boolean </a></li></ul></li><li><a href="#operadores">Operadores </a></li><li><a href="#precedencia-de-operadores-y-asociatividad">Precedencia de Operadores y Asociatividad </a></li><li><a href="#math">Math </a></li><li><a href="#objetos-globales-y-m%C3%A9todos">Objetos Globales y métodos </a></li><li><a href="#introducci%C3%B3n-a-las-funciones">Introducción a las Funciones </a><ul><li><a href="#anatom%C3%ADa-de-una-funci%C3%B3n">Anatomía de una Función </a></li><li><a href="#argumentos">Argumentos </a></li><li><a href="#declaraci%C3%B3n-%E2%80%9Creturn%E2%80%9D-y-scope">Declaración “return” y Scope </a></li></ul></li><li><a href="#control-de-flujo-y-operadores-de-comparaci%C3%B3n">Control de flujo y operadores de comparación </a></li><li><a href="#recursos-adicionales">Recursos adicionales </a></li><li><a href="#homework">Homework </a></li></ul>
       </nav>
-            </div>
-            <div>
-              
+          </div>
+          <div>
+            
+          </div>
+        </div>
+
+        <div id='lesson'>
+          <div style="display:flex; justify-content: right">
+            <div id="readingTime">
+                    Tiempo de lectura 23 min
             </div>
           </div>
-
-          <div id='lesson'>
-            <div style="display:flex; justify-content: right">
-              <div id="readingTime">
-                    Tiempo de lectura 22 min
-              </div>
-            </div>
-            <div>
-              
-              <!-- <table width="100%" style='table-layout:fixed;'>
+          <div>
+            
+            <p><img src="/_src/assets/logo.png" alt="HenryLogo"></p>
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=02-JS-I">
@@ -113,7 +110,7 @@
       </a>
     </td>
   </tr>
-</table> -->
+</table>
 <h1 id="javascript-i" tabindex="-1">JavaScript I <a class="anchor-link" href="#javascript-i"></a></h1>
 <h4 id="introducci%C3%B3n-a-javascript" tabindex="-1">Introducción a JavaScript <a class="anchor-link" href="#introducci%C3%B3n-a-javascript"></a></h4>
 <p>En esta lección cubriremos:</p>
@@ -136,14 +133,14 @@
 <p>Nota: Las palabras claves o keywords son palabras especiales que utiliza el lenguaje para indicar algo. No podremos usas las palabras claves del lenguaje cómo nombres de variables.</p>
 </blockquote>
 <p>Existen tres formas de declarar una variable:</p>
-<pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">var</span> nombre <span class="token operator">=</span> <span class="token string">'Juan'</span><span class="token punctuation">;</span> <span class="token comment">// Vamos a usar principalemente esta forma</span><br><span class="token keyword">let</span> apellido <span class="token operator">=</span> <span class="token string">'Perez'</span><span class="token punctuation">;</span><br><span class="token keyword">const</span> comidafavorita <span class="token operator">=</span> <span class="token string">'Pizza'</span><span class="token punctuation">;</span></code></pre>
-<h4 id="var" tabindex="-1">var <a class="anchor-link" href="#var"></a></h4>
-<p><code>var</code> es la forma declarar una variable en ES5 (ES5 es la versión de JS, hoy en día existe ES6 que es la nueva versión, pero que todavía no es la más usada). Esta es una <em>palabra clave</em> genérica para “variable”.</p>
+<h3 id="var" tabindex="-1">var <a class="anchor-link" href="#var"></a></h3>
+<p>Es la forma declarar una variable en ES5 (ES5 es la versión de JS, hoy en día existe ES6 que es la nueva versión, pero que todavía no es la más usada). Esta es una <em>palabra clave</em> genérica para “variable”.</p>
 <p>Las dos formas siguentes, si bien son válidas, vamos a utilizarlas más adelante en la carrera, cuando tengamos más claros otros conceptos:</p>
-<h4 id="let" tabindex="-1">let <a class="anchor-link" href="#let"></a></h4>
-<p><code>let</code> es una nueva palabra clave de ES6, esto asignará una variable muy similar a <code>var</code>, pero con un comportamiento un poco diferente. Lo más notable es que difiere al crear un “nivel de <em>scope</em>” (hablaremos sobre esto más adelante).</p>
-<h4 id="const" tabindex="-1">const <a class="anchor-link" href="#const"></a></h4>
-<p><code>const</code> también es nuevo en ES6. Un <code>const</code> es una variable que no se podrá cambiar. Esto es la abreviatura de “constante”.</p>
+<h3 id="let" tabindex="-1">let <a class="anchor-link" href="#let"></a></h3>
+<p>Es una nueva palabra clave de ES6, esto asignará una variable muy similar a <code>var</code>, pero con un comportamiento un poco diferente. Lo más notable es que difiere al crear un “nivel de <em>scope</em>” (hablaremos sobre esto más adelante).</p>
+<h3 id="const" tabindex="-1">const <a class="anchor-link" href="#const"></a></h3>
+<p>También es nuevo en ES6. Un <code>const</code> es una variable que no se podrá cambiar. Esto es la abreviatura de “constante”.</p>
+<pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">var</span> nombre <span class="token operator">=</span> <span class="token string">'Juan'</span><span class="token punctuation">;</span> <span class="token comment">// Vamos a usar principalemente esta forma</span><br><span class="token keyword">let</span> apellido <span class="token operator">=</span> <span class="token string">'Perez'</span><span class="token punctuation">;</span><br><span class="token keyword">const</span> comidafavorita <span class="token operator">=</span> <span class="token string">'Pizza'</span><span class="token punctuation">;</span></code></pre>
 <h4 id="console.log" tabindex="-1">console.log <a class="anchor-link" href="#console.log"></a></h4>
 <p>Otro concepto del que hablaremos de inmediato es</p>
 <pre class="language-javascript"><code class="hljs language-javascript">console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
@@ -152,13 +149,13 @@
 <p>En ciencias de la computación, un tipo de dato informático o simplemente tipo, es un atributo de los datos que indica la clase de datos que se va a manejar. Esto incluye imponer restricciones en los datos, como qué valores pueden tomar y qué operaciones se pueden realizar.</p>
 <p>Los tipos de datos aceptados varían de lenguaje en lenguaje.</p>
 <p>Los tipos de datos más básicos en Javascript son <em><strong>Strings</strong></em>, <em><strong>Numbers</strong></em>, and <em><strong>Booleans</strong></em>.</p>
-<h4 id="strings" tabindex="-1">Strings <a class="anchor-link" href="#strings"></a></h4>
+<h3 id="strings" tabindex="-1">Strings <a class="anchor-link" href="#strings"></a></h3>
 <p>Las “strings” son bloques de texto, siempre se definirán entre comillas, ya sea simple o doble. Cualquier texto entre comillas es una cadena o string.</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">var</span> nombrePerro <span class="token operator">=</span> <span class="token string">'firulais'</span><span class="token punctuation">;</span></code></pre>
-<h4 id="numbers" tabindex="-1">Numbers <a class="anchor-link" href="#numbers"></a></h4>
+<h3 id="numbers" tabindex="-1">Numbers <a class="anchor-link" href="#numbers"></a></h3>
 <p>Los números son solo eso, números. Los números NO se envuelven en comillas. Pueden ser negativos también. Javascript tiene una limitación en el tamaño de un número (+/- 9007199254740991), pero muy raramente aparecerá esa limitación en nuestro uso diario.</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">var</span> positivo <span class="token operator">=</span> <span class="token number">27</span><span class="token punctuation">;</span><br><span class="token keyword">var</span> negativo <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">40</span><span class="token punctuation">;</span></code></pre>
-<h4 id="boolean" tabindex="-1">Boolean <a class="anchor-link" href="#boolean"></a></h4>
+<h3 id="boolean" tabindex="-1">Boolean <a class="anchor-link" href="#boolean"></a></h3>
 <p>Los booleanos provienen de la <a href="https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole">lógica de Boole</a>. Es un concepto que alimenta el código binario y el núcleo de las computadoras. Es posible que haya visto código binario en el pasado (0001 0110…), esto es lógica booleana. Esencialmente significa que tiene dos opciones, activar o desactivar, 0 o 1, verdadero o falso. En Javascript usamos booleanos para significar verdadero o falso. Esto puede parecer simple al principio, pero puede complicarse más adelante.</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">var</span> meEncantaJavascript <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span></code></pre>
 <p>Los valores posibles de un dato booleando en JS son: <code>true</code> o <code>false</code>.</p>
@@ -170,36 +167,34 @@
 <p><img src="/_src/assets/02-JS-I/notaciones.png" alt="Notaciones"></p>
 <p>En fin, lo importante a tener en cuenta es que los operadores <em>son</em> funciones.</p>
 <h2 id="precedencia-de-operadores-y-asociatividad" tabindex="-1">Precedencia de Operadores y Asociatividad <a class="anchor-link" href="#precedencia-de-operadores-y-asociatividad"></a></h2>
-<p>Esto parece aburrido, pero nos va a ayudar a saber cómo piensa el intérprete y bajo que reglas actua.</p>
-<p>La <em>precedencia de operadores</em> es básicamente el orden en que se van a llamar las funciones de los operadores. Estás funciones son llamadas en <em>orden de precedencia</em> (las que tienen <strong>mayor</strong> precedencia se ejecutan primero).  O sea que si tenemos más de un operador, el intérprete va a llamar al operador de mayor precendencia primero y después va a seguir con los demás.</p>
+<p>Esto parece aburrido, pero nos va a ayudar a saber cómo piensa el intérprete y bajo qué reglas actúa.</p>
+<p>La <em>precedencia de operadores</em> es básicamente el orden en que se van a llamar las funciones de los operadores. Estás funciones son llamadas en <em><strong>orden de precedencia</strong></em> (las que tienen <strong>mayor</strong> precedencia se ejecutan primero).  O sea que si tenemos más de un operador, el intérprete va a llamar al operador de mayor precendencia primero y después va a seguir con los demás.</p>
 <p>La <em>Asociatividad de operadores</em> es el orden en el que se ejecutan los operadores cuando tienen la misma precedencia, es decir, de izquierda a derecha o de derecha a izquierda.</p>
 <blockquote>
 <p>Podemos ver la documentación completa sobre Precedencia y Asociatividad de los operadores de JavaScript <a href="https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table">acá</a></p>
 </blockquote>
 <p>Por ejemplo: <code>console.log( 3 + 4 * 5)</code> Para resolver esa expresión y saber qué resultado nos va a mostrar el intérprete deberíamos conocer en qué orden ejecuta las operaciones. Al ver la tabla del link de arriba, vemos que la multiplicación tiene una precedencia de 15, y la suma de 14. Por lo tanto el intérprete primero va a ejecutar la multiplicación y luego la suma con el resultado de lo anterior -&gt; <code>console.log( 3 + 20 )</code> -&gt; <code>console.log(23)</code>.</p>
-<blockquote>
-<p>Cuando invocamos una función en Javascript, los argumentos son evaluados primeros (se conoce como <a href=""><strong>non-lazy</strong> evaluation</a>), está definido en la <a href="http://es5.github.io/#x11.2.3">especificación</a>.<br>
-No confundir el orden de ejecución con asociatividad y precedencia, <a href="http://stackoverflow.com/questions/13849906/operator-precedence-and-associativity-with-math-floormath-random">ver esta pregunta de StackOverflow</a>.</p>
-</blockquote>
+<p>Cuando invocamos una función en Javascript, los argumentos son evaluados primeros (se conoce como <a href=""><strong>non-lazy</strong> evaluation</a>), está definido en la <a href="http://es5.github.io/#x11.2.3">especificación</a>.</p>
+<p>No confundir el orden de ejecución con asociatividad y precedencia, <a href="http://stackoverflow.com/questions/13849906/operator-precedence-and-associativity-with-math-floormath-random">ver esta pregunta de StackOverflow</a>.</p>
 <p>Ahora si tuvieramos la misma precedencia entraría en juego la asociatividad, veamos un ejemplo:</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">var</span> a <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">,</span> b <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> c <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span><br><br>a <span class="token operator">=</span> b <span class="token operator">=</span> c<span class="token punctuation">;</span><br><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">,</span> c<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
 <p>Qué veriamos en el console.log? Para eso tenemos que revisar la tabla por la asociatividad del operador de asignación <code>=</code>. Este tiene una precedencia de 3 y una asociatividad de <code>right-to-left</code>, es decir que las operaciones se realizan primero de derecha a izquierda. En este caso, primero se realiza <code>b = c</code> y luego <code>a = b</code> (en realidad al resultado de <code>b = c</code>, que retorna el valor que se está asignando). Por lo tanto al final de todo, todas las variables van a tener el valor <code>3</code>. Si la asociatividad hubiese al revés, todos las variables tendrían el valor <code>1</code>.</p>
 <h2 id="math" tabindex="-1">Math <a class="anchor-link" href="#math"></a></h2>
 <p>Los operadores matemáticos trabajan en JavaScript tal como lo harían en su calculadora.</p>
-<h3 id="%2B---*-%2F-%3D" tabindex="-1">+ - * / = <a class="anchor-link" href="#%2B---*-%2F-%3D"></a></h3>
+<h4 id="%2B---*-%2F-%3D" tabindex="-1">+ - * / = <a class="anchor-link" href="#%2B---*-%2F-%3D"></a></h4>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span> <span class="token operator">=</span> <span class="token number">2</span><br><span class="token number">2</span> <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">=</span> <span class="token number">4</span><br><span class="token number">2</span> <span class="token operator">-</span> <span class="token number">2</span> <span class="token operator">=</span> <span class="token number">0</span><br><span class="token number">2</span> <span class="token operator">/</span> <span class="token number">2</span> <span class="token operator">=</span> <span class="token number">1</span></code></pre>
-<h3 id="%25" tabindex="-1">% <a class="anchor-link" href="#%25"></a></h3>
+<h4 id="%25" tabindex="-1">% <a class="anchor-link" href="#%25"></a></h4>
 <p>Algo que quizás no haya visto antes es el Módulo (<code>%</code>), este operador matemático dividirá los dos números y devolverá el resto.</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token number">21</span> <span class="token operator">%</span> <span class="token number">5</span> <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br><span class="token number">21</span> <span class="token operator">%</span> <span class="token number">6</span> <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span><br><span class="token number">21</span> <span class="token operator">%</span> <span class="token number">7</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span></code></pre>
 <h2 id="objetos-globales-y-m%C3%A9todos" tabindex="-1">Objetos Globales y métodos <a class="anchor-link" href="#objetos-globales-y-m%C3%A9todos"></a></h2>
-<p>Javascript tiene una serie de objetos integrados para que los usemos. Ya hemos visto, y hemos estado usando, el objeto de consola y su método <code>log</code>. Otro de estos objetos es <code>Math</code>. <code>Math</code> tiene varios métodos, al igual que<code> console</code> tiene <code>log</code>. Para agregar a esto, algunos de nuestros tipos de datos también tienen métodos incorporados.</p>
-<h3 id="math.pow" tabindex="-1">Math.pow <a class="anchor-link" href="#math.pow"></a></h3>
+<p>Javascript tiene una serie de objetos integrados para que los usemos. Ya hemos visto, y hemos estado usando, el objeto de consola y su método <code>log</code>. Otro de estos objetos es <code>Math</code>. Éste tiene varios métodos, al igual que <code>console</code> tiene <code>log</code>. Para agregar a esto, algunos de nuestros tipos de datos también tienen métodos incorporados.</p>
+<h4 id="math.pow" tabindex="-1">Math.pow <a class="anchor-link" href="#math.pow"></a></h4>
 <p>Podemos usar el método <code>pow</code> en <code>Math</code> para devolver un número elevado a un exponente. Tomará dos números.</p>
 <pre class="language-javascript"><code class="hljs language-javascript">Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">4</span><span class="token punctuation">;</span><br>Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">9</span><span class="token punctuation">;</span><br>Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">27</span><span class="token punctuation">;</span></code></pre>
-<h3 id="math.round-%2C-math.floor%2C-math.ceil" tabindex="-1">Math.round , Math.floor, Math.ceil <a class="anchor-link" href="#math.round-%2C-math.floor%2C-math.ceil"></a></h3>
+<h4 id="math.round%2C-math.floor%2C-math.ceil" tabindex="-1">Math.round, Math.floor, Math.ceil <a class="anchor-link" href="#math.round%2C-math.floor%2C-math.ceil"></a></h4>
 <p><code>Math</code> también tiene métodos que redondearán los números para nosotros. <code>.round</code> redondeará un número al número entero más cercano. <code>.floor</code> siempre redondeará un número al número entero más cercano hacia abajo. <code>.ceil</code> siempre se redondeará al número entero más cercano hacia arriba.</p>
 <pre class="language-javascript"><code class="hljs language-javascript">Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span><span class="token number">6.5</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span><br>Math<span class="token punctuation">.</span><span class="token function">round</span><span class="token punctuation">(</span><span class="token number">6.45</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span><br>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span><span class="token number">6.999</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">6</span><span class="token punctuation">;</span><br>Math<span class="token punctuation">.</span><span class="token function">ceil</span><span class="token punctuation">(</span><span class="token number">6.0001</span><span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">7</span><span class="token punctuation">;</span></code></pre>
-<h3 id=".length" tabindex="-1">.length <a class="anchor-link" href="#.length"></a></h3>
+<h4 id=".length" tabindex="-1">.length <a class="anchor-link" href="#.length"></a></h4>
 <p>El tipo de datos “string” tiene un método incorporado llamado <code>.length</code>. Cualquier cadena que llamemos a esto devolverá la cantidad de caracteres en esa cadena.</p>
 <pre class="language-javascript"><code class="hljs language-javascript"><span class="token keyword">var</span> nombreGato <span class="token operator">=</span> <span class="token string">'felix'</span><span class="token punctuation">;</span><br>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>nombreGato<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 5</span></code></pre>
 <p>Veremos muchos otros métodos integrados en otros tipos de datos a lo largo de este curso.</p>
@@ -244,15 +239,32 @@ _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para 
 </ul>
 <h2 id="homework" tabindex="-1">Homework <a class="anchor-link" href="#homework"></a></h2>
 <p>Completa la tarea descrita en el archivo <a href="https://github.com/atralice/Curso.Prep.Henry/tree/master/02-JS-I/homework">README</a></p>
+<table class="feedback" width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=02-JS-I">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>
 
-            </div>
           </div>
         </div>
 
       </div>
 
-      <div id="footer">
-        <p>Hecho con 💛 por alumnos de Henry</p>
+      <div class="footerContainer">
+        <div class="footerContained">
+          <div class="feedback">
+            <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=02-JS-I' target="_blank">
+              Dejanos tu feedback!👍
+            </a>
+          </div>
+          <p>Hecho con 💛 por alumnos de Henry</p>
+        </div>
       </div>
 
       
@@ -260,7 +272,7 @@ _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para 
   <div>
     <button
       id="upBtn"
-      style="position:fixed; width:32px; height:32px; border-radius:50%; border:none; background-color:black; right:32px; bottom:40px; color:white; focus:outline-none; cursor:pointer; transition-duration:500ms; opacity:0; pointer-events:none;"
+      style="position:fixed; width:32px; height:32px; border-radius:50%; border:none; background-color:black; right:20px; bottom:55px; color:white; z-index:999; focus:outline-none; cursor:pointer; transition-duration:500ms; opacity:0; pointer-events:none;"
     ><i class="arrow up"></i></button>
   </div>
   
@@ -297,8 +309,8 @@ _Node.js_ es un entorno de tiempo de ejecución desarrollado originalmente para 
   </script>
 
   <!-- reader bar -->
-  <div id="readerBarContainer" style="height:3px;width:100%;background-color:black;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;">
-    <div id="readerBar" style="height:3px;width:0;background-color:yellow;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;"></div>
+  <div id="readerBarContainer" style="height:3px;width:100%;background-color:black;position:fixed;top:66px;left:0;z-index:1099;transition:0.2s;">
+    <div id="readerBar" style="height:3px;width:0;background-color:yellow;position:fixed;top:66px;left:0;z-index:1099;transition:0.2s;"></div>
   </div>
 
   <script>

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,31 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="/_src/styles/lesson.css">
+    <link rel="stylesheet" href="/_src/styles/fonts.css">
+    <link rel="stylesheet" href="/_src/styles/main.css">
+    <link rel="stylesheet" href="/_src/styles/code.css">
 
     <title>Primeros Pasos | Henry Prep Course </title>
   </head>
 
   <body>
     <div class="reader-bar-start">
-      <navbar class="navbar fixed-top navbar-light bg-black">
-        <div class="container-fluid">
-          <img src="/_src/assets/logo-white.png" alt='logo Henry' height=27px class="d-inline-block align-text-top">
+
+      <div id="navbarContainer">
+        <div id="navbarContained">
+          <div>
+            <img src="/_src/assets/logo-white.png" alt='logo Henry' height=27px class="d-inline-block align-text-top">
+          </div>
           <div>
             <span id="lessonTitle">Primeros Pasos</span> | <span>Prep Course</span>
           </div>
         </div>
-      </navbar>
+      </div>
 
-              <div id="feedbackBox">
-              <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=00-PrimerosPasos' target="_blank">
-            
-              Dejanos tu feedback!👍
-          </a>
-          </div>
-
-
-      <div id='main' class="container-fluid">
+      <div id='main'>
         <div id='header' >
           
           <ul class="nav">
@@ -75,35 +74,33 @@
         <a href="/09-CSS-Positioning/README/" class="nav-link" role="menuitem">CSS</a>
       </li>
     </ul>
-
         </div>
 
-        <div class="row">
-
-          <div id='sidebar'>
-            <div id="tocTitle">
+        <div id='sidebar'>
+          <div id="tocTitle">
             Contenido de la clase
             </div>
-            <div id="tocBox">
-              
-              <nav class="toc" >
-        <ul><li><a href="#preparando-tu-compu">Preparando tu compu </a><ul><li><a href="#instructivo-de-primeros-pasos">Instructivo de Primeros Pasos </a></li></ul></li><li><a href="#c%C3%B3mo-usar-slack">Cómo usar SLACK </a></li><li><a href="#editores-de-texto">Editores de Texto </a><ul><li><a href="#sublime-text">Sublime Text </a></li><li><a href="#atom">Atom </a></li><li><a href="#visual-studio-code">Visual Studio Code </a></li></ul></li><li><a href="#instalando-node.js">Instalando Node.JS </a></li><li><a href="#git">Git </a><ul><li><a href="#qu%C3%A9-es-git%3F">Qué es Git? </a></li><li><a href="#instalaci%C3%B3n">Instalación </a></li></ul></li></ul>
+          <div id="tocBox">
+            
+            <nav class="toc" >
+        <ul><li><a href="#instructivo-de-primeros-pasos">Instructivo de Primeros Pasos </a></li><li><a href="#c%C3%B3mo-usar-slack">Cómo usar SLACK </a></li><li><a href="#editores-de-texto">Editores de Texto </a><ul><li><a href="#sublime-text">Sublime Text </a></li><li><a href="#atom">Atom </a></li><li><a href="#visual-studio-code">Visual Studio Code </a></li></ul></li><li><a href="#instalando-node.js">Instalando Node.JS </a></li><li><a href="#git">Git </a><ul><li><a href="#qu%C3%A9-es-git%3F">Qué es Git? </a></li><li><a href="#instalaci%C3%B3n">Instalación </a></li></ul></li></ul>
       </nav>
-            </div>
-            <div>
-              
+          </div>
+          <div>
+            
+          </div>
+        </div>
+
+        <div id='lesson'>
+          <div style="display:flex; justify-content: right">
+            <div id="readingTime">
+                    Tiempo de lectura 9 min
             </div>
           </div>
-
-          <div id='lesson'>
-            <div style="display:flex; justify-content: right">
-              <div id="readingTime">
-                    Tiempo de lectura 9 min
-              </div>
-            </div>
-            <div>
-              
-              <!-- <table width="100%" style='table-layout:fixed;'>
+          <div>
+            
+            <p><img src="/_src/assets/logo.png" alt="HenryLogo"></p>
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=00-PrimerosPasos">
@@ -113,23 +110,23 @@
       </a>
     </td>
   </tr>
-</table> -->
+</table>
 <h1 id="primeros-pasos" tabindex="-1">Primeros Pasos <a class="anchor-link" href="#primeros-pasos"></a></h1>
-<h2 id="preparando-tu-compu" tabindex="-1">Preparando tu compu <a class="anchor-link" href="#preparando-tu-compu"></a></h2>
-<p>Acá vas a encontrar todo lo que necesitas para arrancar el Curso de Preparación.</p>
-<ul>
-<li><a href="./editorTexto.md">Editor de Texto</a></li>
-<li><a href="./github.md">Github</a></li>
-<li><a href="./git.md">Git</a></li>
-<li><a href="./node.md">Instalar Node</a></li>
-</ul>
-<h3 id="instructivo-de-primeros-pasos" tabindex="-1">Instructivo de Primeros Pasos <a class="anchor-link" href="#instructivo-de-primeros-pasos"></a></h3>
-<iframe src="https://player.vimeo.com/video/638636752" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<h4 id="preparando-tu-compu" tabindex="-1">Preparando tu compu <a class="anchor-link" href="#preparando-tu-compu"></a></h4>
+<!-- Acá vas a encontrar todo lo que necesitas para arrancar el Curso de Preparación.
+
+* [Editor de Texto](./editorTexto.md)
+* [Github](./github.md)
+* [Git](./git.md)
+* [Instalar Node](./node.md) -->
+<h2 id="instructivo-de-primeros-pasos" tabindex="-1">Instructivo de Primeros Pasos <a class="anchor-link" href="#instructivo-de-primeros-pasos"></a></h2>
+<iframe src="https://player.vimeo.com/video/638636752" title="Instructivo de Primeros Pasos" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <blockquote>
 <p><strong>Importante</strong>: Github cambió el método de autenticación, ahora es por PAT (Personal Access Token), para crearlo pueden seguir este <a href="https://docs.github.com/es/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">link</a>. Pueden elegir expiration infinita para hacerlo una sóla vez.</p>
 </blockquote>
+<hr>
 <h2 id="c%C3%B3mo-usar-slack" tabindex="-1">Cómo usar SLACK <a class="anchor-link" href="#c%C3%B3mo-usar-slack"></a></h2>
-<iframe src="https://player.vimeo.com/video/548902078" width="640" height="365" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/548902078" title="Cómo usar SLACK" width="640" height="365" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 <blockquote>
 <p>Gracias <a href="https://github.com/NicoConstantin">Nico Constantin (FT#12)</a> por el video y la explicación!</p>
 </blockquote>
@@ -185,7 +182,6 @@
 <pre class="language-shell"><code class="hljs language-shell"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> sublime-text</code></pre>
 <p>Ahora, si en el <strong>Menú de inicio</strong> buscamos <strong>Sublime text</strong>, veremos la siguiente imagen:</p>
 <p><img src="/_src/assets/00-PrimerosPasos/sublimeText_linux.png" alt="Sublime Text Linux"></p>
-<hr>
 <h3 id="atom" tabindex="-1">Atom <a class="anchor-link" href="#atom"></a></h3>
 <p><img src="/_src/assets/00-PrimerosPasos/atom_site.png" alt="Atom Site"></p>
 <p>Es un editor de código abierto, disponible tanto para Windows, como Linux y para OS X.</p>
@@ -200,7 +196,6 @@ Para comenzar el proceso de instalación, realizamos los siguientes pasos:</p>
 <h4 id="en-ubuntu-y-derivados" tabindex="-1">En Ubuntu y derivados <a class="anchor-link" href="#en-ubuntu-y-derivados"></a></h4>
 <p>Descomprimimos el instalador, hacemos doble click, y nos dirigimos a: <code>/usr/bin/atom</code></p>
 <p>Al hacer doble click, se abrirá el editor.</p>
-<hr>
 <h3 id="visual-studio-code" tabindex="-1">Visual Studio Code <a class="anchor-link" href="#visual-studio-code"></a></h3>
 <p><img src="/_src/assets/00-PrimerosPasos/vsc_console.png" alt="VSC Console"></p>
 <p>Es un editor desarrollado por Microsoft.</p>
@@ -247,15 +242,31 @@ Una vez finalizada la descarga, procedemos a ejecutar el instalador.</p>
 <p><img src="/_src/assets/00-PrimerosPasos/consola.png" alt="installGit"></p>
 <p>Una vez instalado Git van a poder visualizar la consola: ingresamos el comando <code>git --version</code> para chequear que está instalado. Si ven la consola así, ya están listos para comenzar a trabajar!</p>
 <p><img src="/_src/assets/00-PrimerosPasos/5.png" alt="installGit"></p>
-
-            </div>
+<table class="feedback" width="100%" style='table-layout:fixed;'>
+  <tr>
+    <td>
+      <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=00-PrimerosPasos">
+        <img src="https://static.thenounproject.com/png/204643-200.png" width="100"/>
+        <br>
+        Hacé click acá para dejar tu feedback sobre esta clase.
+      </a>
+    </td>
+  </tr>
+</table>
           </div>
         </div>
 
       </div>
 
-      <div id="footer">
-        <p>Hecho con 💛 por alumnos de Henry</p>
+      <div class="footerContainer">
+        <div class="footerContained">
+          <div class="feedback">
+            <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=00-PrimerosPasos' target="_blank">
+              Dejanos tu feedback!👍
+            </a>
+          </div>
+          <p>Hecho con 💛 por alumnos de Henry</p>
+        </div>
       </div>
 
       
@@ -263,7 +274,7 @@ Una vez finalizada la descarga, procedemos a ejecutar el instalador.</p>
   <div>
     <button
       id="upBtn"
-      style="position:fixed; width:32px; height:32px; border-radius:50%; border:none; background-color:black; right:32px; bottom:40px; color:white; focus:outline-none; cursor:pointer; transition-duration:500ms; opacity:0; pointer-events:none;"
+      style="position:fixed; width:32px; height:32px; border-radius:50%; border:none; background-color:black; right:20px; bottom:55px; color:white; z-index:999; focus:outline-none; cursor:pointer; transition-duration:500ms; opacity:0; pointer-events:none;"
     ><i class="arrow up"></i></button>
   </div>
   
@@ -300,8 +311,8 @@ Una vez finalizada la descarga, procedemos a ejecutar el instalador.</p>
   </script>
 
   <!-- reader bar -->
-  <div id="readerBarContainer" style="height:3px;width:100%;background-color:black;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;">
-    <div id="readerBar" style="height:3px;width:0;background-color:yellow;position:fixed;top:50px;left:0;z-index:1099;transition:0.2s;"></div>
+  <div id="readerBarContainer" style="height:3px;width:100%;background-color:black;position:fixed;top:66px;left:0;z-index:1099;transition:0.2s;">
+    <div id="readerBar" style="height:3px;width:0;background-color:yellow;position:fixed;top:66px;left:0;z-index:1099;transition:0.2s;"></div>
   </div>
 
   <script>
