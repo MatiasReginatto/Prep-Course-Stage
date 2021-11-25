@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="/_src/styles/fonts.css">
+    <link rel="stylesheet" href="/_src/styles/header.css">
     <link rel="stylesheet" href="/_src/styles/main.css">
     <link rel="stylesheet" href="/_src/styles/sidebar.css">
     <link rel="stylesheet" href="/_src/styles/lesson.css">
@@ -21,13 +22,12 @@
 
   <body>
     <div class="reader-bar-start">
-    
+
       <div class="headerResponsive">
-        <div id="logoHenry">
+        <div class="leftContent">
           <span><img src="/_src/assets/logo-white.png" alt='logo Henry' height=22px class="d-inline-block align-text-top"></span><span></span>
         </div>
-        <div></div>
-        <div class="dropdownDiv">
+        <div class="menuDiv">
           <input type="checkbox">
           <i class="fas fa-bars"></i>
           <i class="fas fa-times"></i>
@@ -49,18 +49,16 @@
         </div>
       </div>
 
-      <div id="headerContainer">
-        <div id="headerContained">
-          <div id="logoHenry">
-            <img src="/_src/assets/logo-white.png" alt='logo Henry' height=27px class="d-inline-block align-text-top">
-          </div>
+      <div class="headerContainer">
+        <div class="headerContained">
+          <img src="/_src/assets/logo-white.png" alt='logo Henry' height=27px class="d-inline-block align-text-top">
           <div>
-            <span id="lessonTitle"></span> | <span>Prep Course</span>
+            <span class="lessonTitle"></span> | <span>Prep Course</span>
           </div>
         </div>
       </div>
 
-      <div id='main'>
+      <main>
         <div class="topnav" id='myTopnav' >
           
           <ul class="nav">
@@ -107,24 +105,21 @@
     </ul>
         </div>
 
-        <div id='sidebar'>
-          <div id="tocTitle">
+        <div class='sidebar'>
+          <div class="tocTitle">
             Contenido de la clase
             </div>
-          <div id="tocBox">
+          <div class="tocBox">
             
             <nav class="toc" >
         <ul><li><a href="#pre-requisitos">Pre-requisitos </a></li><li><a href="#ejercicio">Ejercicio </a><ul><li><a href="#crear-un-repositorio">Crear un Repositorio </a></li><li><a href="#clonar">Clonar </a></li><li><a href="#comandos-de-git%3A">Comandos de git: </a></li></ul></li><li><a href="#comandos-b%C3%A1sicos-de-terminal">Comandos básicos de terminal </a></li></ul>
       </nav>
           </div>
-          <div>
-            
-          </div>
         </div>
 
-        <div id='lesson'>
+        <div class='lesson'>
           <div style="display:flex; justify-content: right; right: 0; width: 100%;">
-            <div id="readingTime">
+            <div class="readingTime">
                     Tiempo de lectura 11 min
             </div>
           </div>
@@ -199,12 +194,12 @@
           </div>
         </div>
 
-      </div>
+      </main>
 
       <div class="feedback">
         <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=' target="_blank">
-              Dejanos tu feedback!👍
-            </a>
+          Dejanos tu feedback!👍
+        </a>
       </div>
 
       <div class="footerContainer">
@@ -213,7 +208,7 @@
         </div>
       </div>
 
-      <div id="readerBarDiv">
+      <div class="readerBarDiv">
         
   <!-- up button -->
   <div>
