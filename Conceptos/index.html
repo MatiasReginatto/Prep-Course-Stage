@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="/_src/styles/responsive.css">
     <script src="https://kit.fontawesome.com/2c38f3d850.js" crossorigin="anonymous"></script>
 
-    <title> | Henry Prep Course </title>
+    <title>Expresiones vs Statements | Henry Prep Course </title>
   </head>
 
   <body>
@@ -25,7 +25,7 @@
 
       <div class="headerResponsive">
         <div class="leftContent">
-          <span><img src="/_src/assets/logo-white.png" alt='logo Henry' height=22px class="d-inline-block align-text-top"></span><span></span>
+          <span><img src="/_src/assets/logo-white.png" alt='logo Henry' height=22px class="d-inline-block align-text-top"></span><span>Expresiones vs Statements</span>
         </div>
         <div class="menuDiv">
           <input type="checkbox">
@@ -34,6 +34,7 @@
           <nav>
             <ul><li><a href="/">Intro</a></li>
 <li><a href="/Primeros_Pasos/">Primeros Pasos</a></li>
+<li><a href="/Conceptos/">Conceptos</a></li>
 <li><a href="/Git/">Git</a></li>
 <li><a href="/GitHub/">GitHub</a></li>
 <li><a href="/Git_y_GitHub/">Git y GitHub</a></li>
@@ -53,7 +54,7 @@
         <div class="headerContained">
           <img src="/_src/assets/logo-white.png" alt='logo Henry' height=27px class="d-inline-block align-text-top">
           <div>
-            <span class="lessonTitle"></span> | <span>Prep Course</span>
+            <span class="lessonTitle">Expresiones vs Statements</span> | <span>Prep Course</span>
           </div>
         </div>
       </div>
@@ -68,6 +69,9 @@
       </li>
 <li class="link">
         <a href="/Primeros_Pasos/" class="nav-link" role="menuitem">Primeros Pasos</a>
+      </li>
+<li class="link">
+        <span class="nav-link activeLink" tabindex="-1" aria-current="true">Conceptos</span>
       </li>
 <li class="link">
         <a href="/Git/" class="nav-link" role="menuitem">Git</a>
@@ -112,7 +116,7 @@
           <div class="tocBox">
             
             <nav class="toc" >
-        <ul><li><a href="#expressions">Expressions </a><ul><li><a href="#expresiones-aritm%C3%A9ticas">Expresiones Aritméticas </a></li><li><a href="#expresiones-de-strings">Expresiones de Strings </a></li></ul></li><li><a href="#expresiones-l%C3%B3gicas">Expresiones lógicas </a></li><li><a href="#expresiones-primarias">Expresiones primarias </a></li><li><a href="#expresiones-de-asignaci%C3%B3n">Expresiones de asignación </a></li><li><a href="#expresiones-con-efectos-secundarios-(side-effects)">Expresiones con efectos secundarios (side effects) </a></li><li><a href="#statements-(sentencias)">Statements (sentencias) </a><ul><li><a href="#declaration-statements%3A">Declaration Statements: </a></li><li><a href="#conditional-statements%3A">Conditional Statements: </a></li><li><a href="#loops-(bucles)-y-jumps-(saltos)">Loops (bucles) y Jumps (saltos) </a></li><li><a href="#expression-statements">Expression Statements </a></li></ul></li></ul>
+        <ul><li><a href="#expressions">Expressions </a><ul><li><a href="#expresiones-aritm%C3%A9ticas">Expresiones Aritméticas </a></li><li><a href="#expresiones-de-strings">Expresiones de Strings </a></li></ul></li><li><a href="#expresiones-l%C3%B3gicas">Expresiones lógicas </a></li><li><a href="#expresiones-primarias">Expresiones primarias </a></li><li><a href="#expresiones-de-asignaci%C3%B3n">Expresiones de asignación </a></li><li><a href="#expresiones-con-efectos-secundarios-(side-effects)">Expresiones con efectos secundarios (side effects) </a></li><li><a href="#statements-(sentencias)">Statements (sentencias) </a><ul><li><a href="#declaration-statements">Declaration Statements </a></li><li><a href="#conditional-statements">Conditional Statements </a></li><li><a href="#loops-(bucles)-y-jumps-(saltos)">Loops (bucles) y Jumps (saltos) </a></li><li><a href="#expression-statements">Expression Statements </a></li></ul></li></ul>
       </nav>
           </div>
         </div>
@@ -125,8 +129,8 @@
           </div>
           <div>
             
-            <img  src='../../logo.png' height='70px'>
-<table width="100%" style='table-layout:fixed;'>
+            <p><img src="/_src/assets/logo.png" alt="HenryLogo"></p>
+<table class="feedback" width="100%" style='table-layout:fixed;'>
   <tr>
     <td>
       <a href="https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=conceptos-Expressions-vs-Statements">
@@ -139,7 +143,7 @@
 </table>
 <h1 id="expresiones-vs-statements" tabindex="-1">Expresiones vs Statements <a class="anchor-link" href="#expresiones-vs-statements"></a></h1>
 <div class="iframeContainer">
-<iframe src="https://player.vimeo.com/video/480856050" allow="autoplay; fullscreen"></iframe>
+  <iframe src="https://player.vimeo.com/video/480856050" allow="autoplay; fullscreen"></iframe>
 </div>
 <p>Podemos decir que todo el código que escribimos en JS o “hace algo” o “retorna algo” (o una combinación de los dos). En la terminología de lenguajes de programación esta diferencia está clasificada en la definición de <strong>expressions</strong> (expresiones) y <strong>statements</strong> (sentencias).</p>
 <p>Podriamos definir conceptualmente a ambas como:</p>
@@ -151,12 +155,12 @@
 <pre class="language-js"><code class="hljs language-js"><span class="token comment">// retorna algo</span><br><span class="token number">1</span> <span class="token operator">+</span> <span class="token number">1</span><br>Math<span class="token punctuation">.</span><span class="token function">pow</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">4</span><span class="token punctuation">;</span><br><span class="token string">'hola'</span> <span class="token operator">+</span> <span class="token string">' soy una expression'</span><span class="token punctuation">;</span></code></pre>
 <p><code>1 + 1</code> intuitivamente se convierte o resuelve a <code>2</code>! eso es una expresión. Es cualquier cosa que escribamos y esperamos que se convierta en otro valor.<br>
 Cuando <em>pegamos</em> una expression en la consola de Firefox o de Chrome, vamos a poder ver el resultado al que resuelve:</p>
-<p><img src="./expresion.png" alt="Expresion"></p>
+<p><img src="/_src/assets/conceptos/expresion.png" alt="Expresion"></p>
 <pre class="language-js"><code class="hljs language-js"><span class="token comment">// hace algo</span><br><span class="token keyword">if</span> <span class="token punctuation">(</span>condicion<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token comment">// código ejecutado si es true</span><br><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br>  <span class="token comment">// código ejecutado si es false</span><br><span class="token punctuation">}</span></code></pre>
 <p>En este ejemplo, vemos que el <code>if</code> “hace algo”, es decir, escribimos el if para que bifurque le ejecución del código según el valor de <code>condicion</code>. Como ya sabemos, si <code>condicion</code> tiene un valor <em>verdaderoso</em> entonces se ejecutará el bloque de código de arriba, y si no, el de abajo.<br>
 Fijensé que acá es importante discriminar lo que está <em>adentro</em> de los bloques de código, ya que ahí adentro podriamos escribir <strong>expresiones</strong> que sí devuelvan algo.</p>
 <p>Nos podemos dar cuenta que algo es un statement, porque si lo <em>pegamos</em> en la consola del intérprete -por ejemplo, en la consola del Firefox o Chrome- vamos a ver que no produce ningún resultado:</p>
-<p><img src="./statement.png" alt="statement"></p>
+<p><img src="/_src/assets/conceptos/statement.png" alt="statement"></p>
 <blockquote>
 <p>Una regla fácil para distinguir entre una <em>expression</em> y un <em>statement</em> en JS es la siguiente:<br>
 Si podemos ponerlo dentro de un <code>console.log</code>, es una <em>expression</em>, si no, es un <em>statement</em>.<br>
@@ -194,7 +198,7 @@ Otra cosa a notar, es que si usamos el keyword <code>var</code> la expresión re
 <h2 id="statements-(sentencias)" tabindex="-1">Statements (sentencias) <a class="anchor-link" href="#statements-(sentencias)"></a></h2>
 <p>Los <em>Statements</em> son instrucciones que le damos al intérprete de JS para que <strong>haga algo</strong>, ese algo puede ser: crear una variable, ejecutar un bloque de código N veces, ejecutar un bloque de código o no según una condición de verdad, declarar una función, etc…</p>
 <p>Podemos clasificar a los Statements en las siguientes categorías:</p>
-<h3 id="declaration-statements%3A" tabindex="-1">Declaration Statements: <a class="anchor-link" href="#declaration-statements%3A"></a></h3>
+<h3 id="declaration-statements" tabindex="-1">Declaration Statements <a class="anchor-link" href="#declaration-statements"></a></h3>
 <p>Este tipo de statements indican al intérprete que declare variables o funciones, se utiliza el keyword <code>function</code> y <code>var</code>. Por ejemplo:</p>
 <pre class="language-js"><code class="hljs language-js"><span class="token keyword">var</span> prueba<span class="token punctuation">;</span> <span class="token comment">// declaro la variable prueba</span><br><span class="token keyword">var</span> toni<span class="token punctuation">;</span>  <span class="token comment">// declaro la variable toni</span><br><br><span class="token keyword">function</span> <span class="token function">suma</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>  <span class="token comment">// declaro la función suma;</span><br>  <span class="token comment">// bloque de código</span><br><span class="token punctuation">}</span></code></pre>
 <blockquote>
@@ -207,7 +211,7 @@ Otra cosa a notar, es que si usamos el keyword <code>var</code> la expresión re
 <blockquote>
 <p>Nótese que un function expression puede no tener nombre. Estas son las llamadas <strong>funciones anónimas</strong>.</p>
 </blockquote>
-<h3 id="conditional-statements%3A" tabindex="-1">Conditional Statements: <a class="anchor-link" href="#conditional-statements%3A"></a></h3>
+<h3 id="conditional-statements" tabindex="-1">Conditional Statements <a class="anchor-link" href="#conditional-statements"></a></h3>
 <p>Estos statements sirven para controlar el flujo de ejecución de código según si se cumple o no una condición. Por ejemplo:</p>
 <pre class="language-js"><code class="hljs language-js"><span class="token keyword">if</span> <span class="token punctuation">(</span>condicion<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// condicion puede ser cualquier expression!!</span><br>  <span class="token comment">// ejecuta este bloque si condicion es true</span><br><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>condicion2<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token comment">// ejecuta este bloque de código si condicion no es true y condicion2 es true</span><br><span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br>  <span class="token comment">// ejecuta este bloque de código si condicion y condicion2 no son true.</span><br><span class="token punctuation">}</span></code></pre>
 <h3 id="loops-(bucles)-y-jumps-(saltos)" tabindex="-1">Loops (bucles) y Jumps (saltos) <a class="anchor-link" href="#loops-(bucles)-y-jumps-(saltos)"></a></h3>
@@ -225,7 +229,7 @@ Otra cosa a notar, es que si usamos el keyword <code>var</code> la expresión re
       </main>
 
       <div class="feedback">
-        <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=' target="_blank">
+        <a href='https://airtable.com/shrSzEYT4idEFGB8d?prefill_clase=conceptos-Expressions-vs-Statements' target="_blank">
           Dejanos tu feedback!👍
         </a>
       </div>
